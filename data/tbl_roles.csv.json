@@ -1,0 +1,602 @@
+[
+    {
+        "pk_roleid": 1,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Administrator",
+            "description": "Super user of the system with all the rights"
+        }
+    },
+    {
+        "pk_roleid": 2,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Staff",
+            "description": "Member of staff may belong to different departments."
+        }
+    },
+    {
+        "pk_roleid": 3,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Human Resources Manager",
+            "description": "Human Resources Manager"
+        }
+    },
+    {
+        "pk_roleid": 4,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Administration and Finance Manager",
+            "description": "Administration and Finance Manager"
+        }
+    },
+    {
+        "pk_roleid": 5,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Management Accountant",
+            "description": "Management Accountant"
+        }
+    },
+    {
+        "pk_roleid": 6,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Chief Accountant",
+            "description": "Chief Accountant"
+        }
+    },
+    {
+        "pk_roleid": 7,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Purchasing Manager",
+            "description": "Purchasing Manager"
+        }
+    },
+    {
+        "pk_roleid": 8,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Purchasing Assistant",
+            "description": "Purchasing Assistant"
+        }
+    },
+    {
+        "pk_roleid": 9,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Treasurer",
+            "description": "Treasurer"
+        }
+    },
+    {
+        "pk_roleid": 10,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Assistant treasurer",
+            "description": "Assistant treasurer"
+        }
+    },
+    {
+        "pk_roleid": 11,
+        "model": "tbl_role",
+        "fields": {
+            "role": "IT supervisor",
+            "description": "IT supervisor"
+        }
+    },
+    {
+        "pk_roleid": 12,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Management  Trainee- Finance",
+            "description": "Management  Trainee- Finance"
+        }
+    },
+    {
+        "pk_roleid": 13,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Payables accountant",
+            "description": "Payables accountant"
+        }
+    },
+    {
+        "pk_roleid": 14,
+        "model": "tbl_role",
+        "fields": {
+            "role": "General ledger Accountant",
+            "description": "General ledger Accountant"
+        }
+    },
+    {
+        "pk_roleid": 15,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Fixed asset Accountant",
+            "description": "Fixed asset Accountant"
+        }
+    },
+    {
+        "pk_roleid": 16,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Inventory accountant",
+            "description": "Inventory accountant"
+        }
+    },
+    {
+        "pk_roleid": 17,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Operations Manager",
+            "description": "Operations Manager"
+        }
+    },
+    {
+        "pk_roleid": 18,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Transport Manager",
+            "description": "Transport Manager"
+        }
+    },
+    {
+        "pk_roleid": 19,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Projects Engineer",
+            "description": "Projects Engineer"
+        }
+    },
+    {
+        "pk_roleid": 20,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depots Maintenance Engineer",
+            "description": "Depots Maintenance"
+        }
+    },
+    {
+        "pk_roleid": 21,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Maintenance Engineer",
+            "description": "Maintenance Engineer"
+        }
+    },
+    {
+        "pk_roleid": 22,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depots and Supply Manager",
+            "description": "Sales"
+        }
+    },
+    {
+        "pk_roleid": 23,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Management Trainee operations",
+            "description": "Management Trainee operations"
+        }
+    },
+    {
+        "pk_roleid": 24,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depot Manager",
+            "description": "Depot Manager"
+        }
+    },
+    {
+        "pk_roleid": 25,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depot Assistant",
+            "description": "Depot Assistant"
+        }
+    },
+    {
+        "pk_roleid": 26,
+        "model": "tbl_role",
+        "fields": {
+            "role": "HSSEQ Manager",
+            "description": "HSSEQ Manager"
+        }
+    },
+    {
+        "pk_roleid": 27,
+        "model": "tbl_role",
+        "fields": {
+            "role": "HSSEQ Officer",
+            "description": "HSSEQ Officer"
+        }
+    },
+    {
+        "pk_roleid": 29,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Human Resource Officer",
+            "description": "Human Resource Officer"
+        }
+    },
+    {
+        "pk_roleid": 30,
+        "model": "tbl_role",
+        "fields": {
+            "role": "MD's personal Assistant",
+            "description": "MD's personal Assistant"
+        }
+    },
+    {
+        "pk_roleid": 31,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Receptionist",
+            "description": "Receptionist"
+        }
+    },
+    {
+        "pk_roleid": 32,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Commercial Manager -General Trade",
+            "description": "Commercial Manager -General Trade"
+        }
+    },
+    {
+        "pk_roleid": 33,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Network Territory Manager",
+            "description": "Network Territory Manager"
+        }
+    },
+    {
+        "pk_roleid": 34,
+        "model": "tbl_role",
+        "fields": {
+            "role": "General Trade manager",
+            "description": "General Trade manager"
+        }
+    },
+    {
+        "pk_roleid": 35,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Lubes and specialties Manager",
+            "description": "Lubes and specialties Manager"
+        }
+    },
+    {
+        "pk_roleid": 36,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Lubes Engineer",
+            "description": "Lubes Engineer"
+        }
+    },
+    {
+        "pk_roleid": 37,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Retail training and develop",
+            "description": "Retail training and develop"
+        }
+    },
+    {
+        "pk_roleid": 38,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Marketing and Communications Officer",
+            "description": "Marketing and Communications Officer"
+        }
+    },
+    {
+        "pk_roleid": 39,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Territory manager Retail",
+            "description": "Territory manager Retail"
+        }
+    },
+    {
+        "pk_roleid": 40,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Territory manager GT",
+            "description": "Territory manager GT"
+        }
+    },
+    {
+        "pk_roleid": 41,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Solar Coordinator",
+            "description": "Solar Coordinator"
+        }
+    },
+    {
+        "pk_roleid": 42,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Card Executive",
+            "description": "Card Executive"
+        }
+    },
+    {
+        "pk_roleid": 43,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Customer Service Manager",
+            "description": "Customer Service Manager"
+        }
+    },
+    {
+        "pk_roleid": 44,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Plus card Officer",
+            "description": "Plus card Officer"
+        }
+    },
+    {
+        "pk_roleid": 45,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Card admin executive",
+            "description": "Card admin executive"
+        }
+    },
+    {
+        "pk_roleid": 46,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Customer Service Representative",
+            "description": "Customer Service Representative"
+        }
+    },
+    {
+        "pk_roleid": 47,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Management  Trainee- Commercial",
+            "description": "Management  Trainee- Commercial"
+        }
+    },
+    {
+        "pk_roleid": 48,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Managing Director",
+            "description": "Managing Director"
+        }
+    },
+    {
+        "pk_roleid": 49,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Chairman",
+            "description": "Total Malawi Chairman"
+        }
+    },
+    {
+        "pk_roleid": 50,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Initiator",
+            "description": "All users in the system"
+        }
+    },
+    {
+        "pk_roleid": 51,
+        "model": "tbl_role",
+        "fields": {
+            "role": "HOD",
+            "description": "Head of department"
+        }
+    },
+    {
+        "pk_roleid": 52,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Credit Controler",
+            "description": "responsible for credit control"
+        }
+    },
+    {
+        "pk_roleid": 53,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Auditor",
+            "description": "Internal Auditing"
+        }
+    },
+    {
+        "pk_roleid": 54,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Field Maintenance Engineer",
+            "description": "Maintenance works"
+        }
+    },
+    {
+        "pk_roleid": 55,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depots Technician",
+            "description": "Maintenance of depots"
+        }
+    },
+    {
+        "pk_roleid": 56,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Retail Development And Training Manager",
+            "description": "Trainings"
+        }
+    },
+    {
+        "pk_roleid": 57,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Retail Development Manager",
+            "description": "Retail Development Manager"
+        }
+    },
+    {
+        "pk_roleid": 58,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Maintenance Technician",
+            "description": "Maintenance Technician"
+        }
+    },
+    {
+        "pk_roleid": 59,
+        "model": "tbl_role",
+        "fields": {
+            "role": "SFS MERCHANDISER",
+            "description": "SFS MERCHANDISER"
+        }
+    },
+    {
+        "pk_roleid": 60,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Regional Manager",
+            "description": "Regional Manager"
+        }
+    },
+    {
+        "pk_roleid": 62,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Staff duplicate",
+            "description": "Member of staff may belong to different departments. ( Edit duplicate description )"
+        }
+    },
+    {
+        "pk_roleid": 63,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Human Resource Manager",
+            "description": "HR Head"
+        }
+    },
+    {
+        "pk_roleid": 64,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depot Supervisor",
+            "description": "Depot Supervisor"
+        }
+    },
+    {
+        "pk_roleid": 66,
+        "model": "tbl_role",
+        "fields": {
+            "role": "MD's Driver",
+            "description": "MD's Driver"
+        }
+    },
+    {
+        "pk_roleid": 67,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Depot Operator",
+            "description": "Depot Operator"
+        }
+    },
+    {
+        "pk_roleid": 68,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Business Development Manager",
+            "description": "Business Development Manager"
+        }
+    },
+    {
+        "pk_roleid": 69,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Site Supervisor",
+            "description": "Customer Site Supervisor"
+        }
+    },
+    {
+        "pk_roleid": 71,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Corporate Affairs Manager",
+            "description": "Corporate Affairs"
+        }
+    },
+    {
+        "pk_roleid": 73,
+        "model": "tbl_role",
+        "fields": {
+            "role": "IT  & Digital Officer",
+            "description": "IT  & Digital Officer"
+        }
+    },
+    {
+        "pk_roleid": 74,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Network Commercial Manager",
+            "description": "Head of Department - Network Commercial Manager"
+        }
+    },
+    {
+        "pk_roleid": 75,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Commercial Manager -General Trade",
+            "description": "Commercial Manager -General Trade"
+        }
+    },
+    {
+        "pk_roleid": 76,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Auditor ( Edit duplicate role )",
+            "description": "Internal Auditing ( Edit duplicate description )"
+        }
+    },
+    {
+        "pk_roleid": 77,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Legal Management Trainee",
+            "description": "Legal Management Trainee"
+        }
+    },
+    {
+        "pk_roleid": 78,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Consolidation Manager",
+            "description": "Consolidation Manager"
+        }
+    },
+    {
+        "pk_roleid": 79,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Chief Accountant ( Edit duplicate role )",
+            "description": "Chief Accountant ( Edit duplicate description )"
+        }
+    },
+    {
+        "pk_roleid": 80,
+        "model": "tbl_role",
+        "fields": {
+            "role": "Special Projects Coordinator",
+            "description": "Special Projects Coordinator"
+        }
+    }
+]

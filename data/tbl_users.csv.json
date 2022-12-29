@@ -1,0 +1,1432 @@
+[
+    {
+        "pk": 1,
+        "model": "user",
+        "fields": {
+            "first_name": "Phelire",
+            "last_name": "BOTA",
+            "email": "Phelire.BOTA@total.co.mw",
+            "username": "J0481750",
+            "password": 0
+        }
+    },
+    {
+        "pk": 2,
+        "model": "user",
+        "fields": {
+            "first_name": "Aegidia",
+            "last_name": "SCHNEPP",
+            "email": "Aegidia.SCHNEPP@total.co.mw",
+            "username": "J0104690",
+            "password": 0
+        }
+    },
+    {
+        "pk": 3,
+        "model": "user",
+        "fields": {
+            "first_name": "Martin",
+            "last_name": "MSIMUKO",
+            "email": "Martin.MSIMUKO@total.co.mw",
+            "username": "J0242133",
+            "password": 0
+        }
+    },
+    {
+        "pk": 4,
+        "model": "user",
+        "fields": {
+            "first_name": "Caroline",
+            "last_name": "MUTETI",
+            "email": "Caroline.MUTETI@total.co.mw",
+            "username": "J0461159",
+            "password": 0
+        }
+    },
+    {
+        "pk": 5,
+        "model": "user",
+        "fields": {
+            "first_name": "Sibongile",
+            "last_name": "BANDA",
+            "email": "Sibongile.BANDA@total.co.mw",
+            "username": "J0410145",
+            "password": 0
+        }
+    },
+    {
+        "pk": 6,
+        "model": "user",
+        "fields": {
+            "first_name": "Elijah",
+            "last_name": "MWALE",
+            "email": "Elijah.MWALE@total.co.mw",
+            "username": "J0360924",
+            "password": 0
+        }
+    },
+    {
+        "pk": 7,
+        "model": "user",
+        "fields": {
+            "first_name": "Burton",
+            "last_name": "MHONE",
+            "email": "Burton.MHONE@total.co.mw",
+            "username": "J0422966",
+            "password": 0
+        }
+    },
+    {
+        "pk": 8,
+        "model": "user",
+        "fields": {
+            "first_name": "Edwin",
+            "last_name": "MSHANGA",
+            "email": "Edwin.MSHANGA@total.co.mw",
+            "username": "J0419395",
+            "password": 0
+        }
+    },
+    {
+        "pk": 9,
+        "model": "user",
+        "fields": {
+            "first_name": "Shadreck",
+            "last_name": "CHAWINGA",
+            "email": "Shadreck.CHAWINGA@total.co.mw",
+            "username": "J0473012",
+            "password": 0
+        }
+    },
+    {
+        "pk": 10,
+        "model": "user",
+        "fields": {
+            "first_name": "Sungeni",
+            "last_name": "MADEIRA",
+            "email": "Sungeni.MADEIRA@total.co.mw",
+            "username": "J1024864",
+            "password": 0
+        }
+    },
+    {
+        "pk": 11,
+        "model": "user",
+        "fields": {
+            "first_name": "Ndaona",
+            "last_name": "CHABWERA",
+            "email": "Ndaona.CHABWERA@total.co.mw",
+            "username": "J0417246",
+            "password": 0
+        }
+    },
+    {
+        "pk": 12,
+        "model": "user",
+        "fields": {
+            "first_name": "Daniel",
+            "last_name": "MPONDA",
+            "email": "Daniel.MPONDA@total.co.mw",
+            "username": "J0420937",
+            "password": 0
+        }
+    },
+    {
+        "pk": 13,
+        "model": "user",
+        "fields": {
+            "first_name": "Khama",
+            "last_name": "CHIBWANA",
+            "email": "Khama.CHIBWANA@total.co.mw",
+            "username": "J0476144",
+            "password": 0
+        }
+    },
+    {
+        "pk": 14,
+        "model": "user",
+        "fields": {
+            "first_name": "Ussen",
+            "last_name": "MUSSA",
+            "email": "Ussen.MUSSA@total.co.mw",
+            "username": "J0285203",
+            "password": 0
+        }
+    },
+    {
+        "pk": 15,
+        "model": "user",
+        "fields": {
+            "first_name": "Lucia",
+            "last_name": "LIKUBWE",
+            "email": "lucia.mukatipa@total.co.mw",
+            "username": "J0459283",
+            "password": 0
+        }
+    },
+    {
+        "pk": 16,
+        "model": "user",
+        "fields": {
+            "first_name": "Pingani",
+            "last_name": "KUYENDA",
+            "email": "Pingani.KUYENDA@total.co.mw",
+            "username": "J0430822",
+            "password": 0
+        }
+    },
+    {
+        "pk": 17,
+        "model": "user",
+        "fields": {
+            "first_name": "Julian",
+            "last_name": "AGABA",
+            "email": "Julian.AGABA@total.co.mw",
+            "username": "L0463072",
+            "password": 0
+        }
+    },
+    {
+        "pk": 18,
+        "model": "user",
+        "fields": {
+            "first_name": "Masanika",
+            "last_name": "GONDWE",
+            "email": "Masanika.GONDWE@total.co.mw",
+            "username": "J0461814",
+            "password": 0
+        }
+    },
+    {
+        "pk": 19,
+        "model": "user",
+        "fields": {
+            "first_name": "Angella",
+            "last_name": "MMANGA",
+            "email": "Angella.MMANGA@total.co.mw",
+            "username": "J0458561",
+            "password": 0
+        }
+    },
+    {
+        "pk": 20,
+        "model": "user",
+        "fields": {
+            "first_name": "Charles",
+            "last_name": "CHIDULE",
+            "email": "Charles.CHIDULE@total.co.mw",
+            "username": "J0451858",
+            "password": 0
+        }
+    },
+    {
+        "pk": 21,
+        "model": "user",
+        "fields": {
+            "first_name": "Bubile",
+            "last_name": "NYIRENDA",
+            "email": "Bubile.NYIRENDA@total.co.mw",
+            "username": "J0422967",
+            "password": 0
+        }
+    },
+    {
+        "pk": 22,
+        "model": "user",
+        "fields": {
+            "first_name": "Ernest",
+            "last_name": "JUMA",
+            "email": "Ernest.JUMA@total.co.mw",
+            "username": "J0476145",
+            "password": 0
+        }
+    },
+    {
+        "pk": 23,
+        "model": "user",
+        "fields": {
+            "first_name": "Lindani",
+            "last_name": "PHIRI",
+            "email": "Lindani.PHIRI@total.co.mw",
+            "username": "J0332991",
+            "password": 0
+        }
+    },
+    {
+        "pk": 24,
+        "model": "user",
+        "fields": {
+            "first_name": "Dalitso",
+            "last_name": "BUTAO",
+            "email": "Dalitso.BUTAO@total.co.mw",
+            "username": "J0430830",
+            "password": 0
+        }
+    },
+    {
+        "pk": 25,
+        "model": "user",
+        "fields": {
+            "first_name": "Sekaninge",
+            "last_name": "KALIATI",
+            "email": "Sekaninge.KALIATI@total.co.mw",
+            "username": "J0285173",
+            "password": 0
+        }
+    },
+    {
+        "pk": 26,
+        "model": "user",
+        "fields": {
+            "first_name": "Mcchancy",
+            "last_name": "MKAMANGA",
+            "email": "Mcchancy.MKAMANGA@total.co.mw",
+            "username": "J0285174",
+            "password": 0
+        }
+    },
+    {
+        "pk": 27,
+        "model": "user",
+        "fields": {
+            "first_name": "Violet",
+            "last_name": "SIBANDE",
+            "email": "Violet.SIBANDE@total.co.mw",
+            "username": "J0285184",
+            "password": 0
+        }
+    },
+    {
+        "pk": 28,
+        "model": "user",
+        "fields": {
+            "first_name": "Teclezghi",
+            "last_name": "FESSEHAYE",
+            "email": "Teclezghi.FESSEHAYE@total.co.mw",
+            "username": "J0249945",
+            "password": 0
+        }
+    },
+    {
+        "pk": 29,
+        "model": "user",
+        "fields": {
+            "first_name": "Atupele",
+            "last_name": "KADOKERA",
+            "email": "Atupele.KADOKERA@total.co.mw",
+            "username": "J0285166",
+            "password": 0
+        }
+    },
+    {
+        "pk": 30,
+        "model": "user",
+        "fields": {
+            "first_name": "Innocent",
+            "last_name": "MLAVIWA",
+            "email": "Innocent.MLAVIWA@total.co.mw",
+            "username": "J0455320",
+            "password": 0
+        }
+    },
+    {
+        "pk": 31,
+        "model": "user",
+        "fields": {
+            "first_name": "Bryce",
+            "last_name": "NTHARA",
+            "email": "Bryce.NTHARA@total.co.mw",
+            "username": "J0433620",
+            "password": 0
+        }
+    },
+    {
+        "pk": 32,
+        "model": "user",
+        "fields": {
+            "first_name": "Gloria",
+            "last_name": "Chiumia",
+            "email": "Gloria.CHIUMIA@total.co.mw",
+            "username": "J0379378",
+            "password": 0
+        }
+    },
+    {
+        "pk": 33,
+        "model": "user",
+        "fields": {
+            "first_name": "Chimango",
+            "last_name": "Sichinga",
+            "email": "Chimango.SICHINGA@total.co.mw",
+            "username": "J0314125",
+            "password": 0
+        }
+    },
+    {
+        "pk": 34,
+        "model": "user",
+        "fields": {
+            "first_name": "George",
+            "last_name": "NYONDO",
+            "email": "George.NYONDO@total.co.mw",
+            "username": "J0274504",
+            "password": 0
+        }
+    },
+    {
+        "pk": 35,
+        "model": "user",
+        "fields": {
+            "first_name": "Caroline",
+            "last_name": "MBITHE",
+            "email": "carolinemuteti@gmail.com",
+            "username": "J01234",
+            "password": 0
+        }
+    },
+    {
+        "pk": 36,
+        "model": "user",
+        "fields": {
+            "first_name": "Salome",
+            "last_name": "MANDA",
+            "email": "Salome.MANDA@total.co.mw",
+            "username": "J0314128",
+            "password": 0
+        }
+    },
+    {
+        "pk": 37,
+        "model": "user",
+        "fields": {
+            "first_name": "Abel",
+            "last_name": "YELLEWA",
+            "email": "Abel.YELLEWA@total.co.mw",
+            "username": "J0285185",
+            "password": 0
+        }
+    },
+    {
+        "pk": 38,
+        "model": "user",
+        "fields": {
+            "first_name": "Edwin",
+            "last_name": "Gmail",
+            "email": "eddims@gmail.com",
+            "username": "j0123456",
+            "password": 0
+        }
+    },
+    {
+        "pk": 39,
+        "model": "user",
+        "fields": {
+            "first_name": "Alapeyine",
+            "last_name": "CHIMBENDE",
+            "email": "Alapeyine.CHIMBENDE@total.co.mw",
+            "username": "L0346382",
+            "password": 0
+        }
+    },
+    {
+        "pk": 40,
+        "model": "user",
+        "fields": {
+            "first_name": "Allan",
+            "last_name": "YATHA",
+            "email": "Allan.YATHA@total.co.mw",
+            "username": "J0472214",
+            "password": 0
+        }
+    },
+    {
+        "pk": 41,
+        "model": "user",
+        "fields": {
+            "first_name": "Alexander",
+            "last_name": "CHIKAFA",
+            "email": "Alexander.CHIKAFA@total.co.mw",
+            "username": "J0405517",
+            "password": 0
+        }
+    },
+    {
+        "pk": 42,
+        "model": "user",
+        "fields": {
+            "first_name": "Arnold",
+            "last_name": "NJIKHO",
+            "email": "Arnold.NJIKHO@total.co.mw",
+            "username": "J0337635",
+            "password": 0
+        }
+    },
+    {
+        "pk": 43,
+        "model": "user",
+        "fields": {
+            "first_name": "Beston",
+            "last_name": "MPONDA",
+            "email": "Beston.MPONDA@total.co.mw",
+            "username": "J0285199",
+            "password": 0
+        }
+    },
+    {
+        "pk": 44,
+        "model": "user",
+        "fields": {
+            "first_name": "Boniface",
+            "last_name": "WIZILAMU",
+            "email": "Boniface.WIZILAMU@total.co.mw",
+            "username": "J0461809",
+            "password": 0
+        }
+    },
+    {
+        "pk": 45,
+        "model": "user",
+        "fields": {
+            "first_name": "Davies",
+            "last_name": "MSAKAMBEWA",
+            "email": "Davies.MSAKAMBEWA@total.co.mw",
+            "username": "J1006255",
+            "password": 0
+        }
+    },
+    {
+        "pk": 46,
+        "model": "user",
+        "fields": {
+            "first_name": "Carolyn",
+            "last_name": "CHIPHWANYA",
+            "email": "Carolyn.CHIPHWANYA@total.co.mw",
+            "username": "J0363388",
+            "password": 0
+        }
+    },
+    {
+        "pk": 47,
+        "model": "user",
+        "fields": {
+            "first_name": "Christopher",
+            "last_name": "CHIRWA",
+            "email": "Christopher.CHIRWA@total.co.mw",
+            "username": "J0285162",
+            "password": 0
+        }
+    },
+    {
+        "pk": 48,
+        "model": "user",
+        "fields": {
+            "first_name": "Easter",
+            "last_name": "MAPEMBA",
+            "email": "Easter.MAPEMBA@total.co.mw",
+            "username": "J0314129",
+            "password": 0
+        }
+    },
+    {
+        "pk": 49,
+        "model": "user",
+        "fields": {
+            "first_name": "Emmanuel",
+            "last_name": "MANDA",
+            "email": "Emmanuel.MANDA@total.co.mw",
+            "username": "J0285172",
+            "password": 0
+        }
+    },
+    {
+        "pk": 50,
+        "model": "user",
+        "fields": {
+            "first_name": "Getrude",
+            "last_name": "NAMALE",
+            "email": "Getrude.NAMALE@total.co.mw",
+            "username": "J0461812",
+            "password": 0
+        }
+    },
+    {
+        "pk": 51,
+        "model": "user",
+        "fields": {
+            "first_name": "Hluppekile",
+            "last_name": "KAUNDA",
+            "email": "Hluppekile.KAUNDA@total.co.mw",
+            "username": "J0430829",
+            "password": 0
+        }
+    },
+    {
+        "pk": 52,
+        "model": "user",
+        "fields": {
+            "first_name": "Honesty",
+            "last_name": "NYASULU",
+            "email": "Honesty.NYASULU@total.co.mw",
+            "username": "J0285180",
+            "password": 0
+        }
+    },
+    {
+        "pk": 53,
+        "model": "user",
+        "fields": {
+            "first_name": "Rukhsana",
+            "last_name": "KASINJA",
+            "email": "rukhsana.KASINJA@total.co.mw",
+            "username": "J0494338",
+            "password": 0
+        }
+    },
+    {
+        "pk": 54,
+        "model": "user",
+        "fields": {
+            "first_name": "Isabel",
+            "last_name": "MBENDERA",
+            "email": "Isabel.MBENDERA@total.co.mw",
+            "username": "J0375130",
+            "password": 0
+        }
+    },
+    {
+        "pk": 55,
+        "model": "user",
+        "fields": {
+            "first_name": "Isdore",
+            "last_name": "HETEKERE",
+            "email": "Isdore.HETEKERE@total.co.mw",
+            "username": "J0274529",
+            "password": 0
+        }
+    },
+    {
+        "pk": 56,
+        "model": "user",
+        "fields": {
+            "first_name": "Ivy",
+            "last_name": "MALEMBA",
+            "email": "Ivy.MALEMBA@total.co.mw",
+            "username": "J0285160",
+            "password": 0
+        }
+    },
+    {
+        "pk": 57,
+        "model": "user",
+        "fields": {
+            "first_name": "Jack",
+            "last_name": "PHIRI",
+            "email": "Jack.PHIRI@total.co.mw",
+            "username": "J0472212",
+            "password": 0
+        }
+    },
+    {
+        "pk": 58,
+        "model": "user",
+        "fields": {
+            "first_name": "James",
+            "last_name": "MANGOCHI",
+            "email": "James.MANGOCHI@total.co.mw",
+            "username": "J0470019",
+            "password": 0
+        }
+    },
+    {
+        "pk": 59,
+        "model": "user",
+        "fields": {
+            "first_name": "Kiddy",
+            "last_name": "SUMANI",
+            "email": "Kiddy.SUMANI@total.co.mw",
+            "username": "J0285188",
+            "password": 0
+        }
+    },
+    {
+        "pk": 60,
+        "model": "user",
+        "fields": {
+            "first_name": "Luwani",
+            "last_name": "NYASULU",
+            "email": "Luwani.NYASULU@total.co.mw",
+            "username": "J0285181",
+            "password": 0
+        }
+    },
+    {
+        "pk": 61,
+        "model": "user",
+        "fields": {
+            "first_name": "Memory",
+            "last_name": "ZULU",
+            "email": "Memory.ZULU@total.co.mw",
+            "username": "J0433616",
+            "password": 0
+        }
+    },
+    {
+        "pk": 62,
+        "model": "user",
+        "fields": {
+            "first_name": "Midory",
+            "last_name": "NGOSI",
+            "email": "Midory.NGOSI@total.co.mw",
+            "username": "J0409974",
+            "password": 0
+        }
+    },
+    {
+        "pk": 63,
+        "model": "user",
+        "fields": {
+            "first_name": "Mwai",
+            "last_name": "MSOSA",
+            "email": "Mwai.MSOSA@total.co.mw",
+            "username": "J0285175",
+            "password": 0
+        }
+    },
+    {
+        "pk": 64,
+        "model": "user",
+        "fields": {
+            "first_name": "Naaila",
+            "last_name": "MUSSA",
+            "email": "Naaila.MUSSA@total.co.mw",
+            "username": "J0480433",
+            "password": 0
+        }
+    },
+    {
+        "pk": 65,
+        "model": "user",
+        "fields": {
+            "first_name": "Naomie",
+            "last_name": "PHIRI",
+            "email": "Naomie.PHIRI@total.co.mw",
+            "username": "J0424423",
+            "password": 0
+        }
+    },
+    {
+        "pk": 66,
+        "model": "user",
+        "fields": {
+            "first_name": "Patrick",
+            "last_name": "MAKINA",
+            "email": "Patrick.MAKINA@total.co.mw",
+            "username": "J0450998",
+            "password": 0
+        }
+    },
+    {
+        "pk": 67,
+        "model": "user",
+        "fields": {
+            "first_name": "Rabecca",
+            "last_name": "LUYA",
+            "email": "Rabecca.LUYA@total.co.mw",
+            "username": "L0375721",
+            "password": 0
+        }
+    },
+    {
+        "pk": 68,
+        "model": "user",
+        "fields": {
+            "first_name": "Reuben",
+            "last_name": "KAMBUDZI",
+            "email": "Reuben.KAMBUDZI@total.co.mw",
+            "username": "J0473395",
+            "password": 0
+        }
+    },
+    {
+        "pk": 69,
+        "model": "user",
+        "fields": {
+            "first_name": "Thomas",
+            "last_name": "MWANDIRA",
+            "email": "Thomas.MWANDIRA@total.co.mw",
+            "username": "J0470021",
+            "password": 0
+        }
+    },
+    {
+        "pk": 70,
+        "model": "user",
+        "fields": {
+            "first_name": "Tiwonge",
+            "last_name": "NYANGULU",
+            "email": "Tiwonge.NYANGULU@total.co.mw",
+            "username": "J0337630",
+            "password": 0
+        }
+    },
+    {
+        "pk": 71,
+        "model": "user",
+        "fields": {
+            "first_name": "Tiyese",
+            "last_name": "LACKSON",
+            "email": "Tiyese.LACKSON@total.co.mw",
+            "username": "J0473396",
+            "password": 0
+        }
+    },
+    {
+        "pk": 72,
+        "model": "user",
+        "fields": {
+            "first_name": "Tracy",
+            "last_name": "MNYANGA",
+            "email": "Tracy.MNYANGA@total.co.mw",
+            "username": "J0475299",
+            "password": 0
+        }
+    },
+    {
+        "pk": 73,
+        "model": "user",
+        "fields": {
+            "first_name": "Tumaini",
+            "last_name": "MWAKAPOJA",
+            "email": "Tumaini.MWAKAPOJA@total.co.mw",
+            "username": "J0417247",
+            "password": 0
+        }
+    },
+    {
+        "pk": 74,
+        "model": "user",
+        "fields": {
+            "first_name": "Uchizi",
+            "last_name": "NYASULU",
+            "email": "Uchizi.NYASULU@total.co.mw",
+            "username": "J0466769",
+            "password": 0
+        }
+    },
+    {
+        "pk": 75,
+        "model": "user",
+        "fields": {
+            "first_name": "Violet",
+            "last_name": "MZUMARA",
+            "email": "Violet.MZUMARA@total.co.mw",
+            "username": "J0439085",
+            "password": 0
+        }
+    },
+    {
+        "pk": 76,
+        "model": "user",
+        "fields": {
+            "first_name": "Wanangwa",
+            "last_name": "LUNGU",
+            "email": "Wanangwa.LUNGU@total.co.mw",
+            "username": "J0368365",
+            "password": 0
+        }
+    },
+    {
+        "pk": 77,
+        "model": "user",
+        "fields": {
+            "first_name": "Yoasi",
+            "last_name": "NAFITALE",
+            "email": "Yoasi.NAFITALE@total.co.mw",
+            "username": "J0285194",
+            "password": 0
+        }
+    },
+    {
+        "pk": 78,
+        "model": "user",
+        "fields": {
+            "first_name": "Yohani",
+            "last_name": "MWAFONGO",
+            "email": "Yohani.MWAFONGO@gmail.com",
+            "username": "J0470020",
+            "password": 0
+        }
+    },
+    {
+        "pk": 79,
+        "model": "user",
+        "fields": {
+            "first_name": "Martin",
+            "last_name": "PHIRI",
+            "email": "Martin.PHIRI@total.co.mw",
+            "username": "J0337639",
+            "password": 0
+        }
+    },
+    {
+        "pk": 80,
+        "model": "user",
+        "fields": {
+            "first_name": "Micaiah",
+            "last_name": "NKOMBA",
+            "email": "Micaiah.NKOMBA@total.co.mw",
+            "username": "J0491436",
+            "password": 0
+        }
+    },
+    {
+        "pk": 81,
+        "model": "user",
+        "fields": {
+            "first_name": "Ngonizaishe",
+            "last_name": "MREWA",
+            "email": "Ngonizaishe.MREWA@total.co.mw",
+            "username": "J0491437",
+            "password": 0
+        }
+    },
+    {
+        "pk": 82,
+        "model": "user",
+        "fields": {
+            "first_name": "Rumbani",
+            "last_name": "CHAVWANGA",
+            "email": "Rumbani.CHAVWANGA@total.co.mw",
+            "username": "J0491828",
+            "password": 0
+        }
+    },
+    {
+        "pk": 83,
+        "model": "user",
+        "fields": {
+            "first_name": "Dacia",
+            "last_name": "DABWA",
+            "email": "Dacia.DABWA@total.co.mw",
+            "username": "J0491829",
+            "password": 0
+        }
+    },
+    {
+        "pk": 84,
+        "model": "user",
+        "fields": {
+            "first_name": "Nehuwa",
+            "last_name": "NAMUTHUWA",
+            "email": "Nehuwa.NAMUTHUWA@total.co.mw",
+            "username": "J0491830",
+            "password": 0
+        }
+    },
+    {
+        "pk": 85,
+        "model": "user",
+        "fields": {
+            "first_name": "Cecilia",
+            "last_name": "BAKUWA",
+            "email": "Cecilia.BAKUWA@total.co.mw",
+            "username": "J0492025",
+            "password": 0
+        }
+    },
+    {
+        "pk": 86,
+        "model": "user",
+        "fields": {
+            "first_name": "Omega",
+            "last_name": "Uko",
+            "email": "Omega.UKO@total.co.mw",
+            "username": "J0491789",
+            "password": 0
+        }
+    },
+    {
+        "pk": 87,
+        "model": "user",
+        "fields": {
+            "first_name": "Overton",
+            "last_name": "BENETT",
+            "email": "overton.BENETT@total.co.mw",
+            "username": "J0491433",
+            "password": 0
+        }
+    },
+    {
+        "pk": 88,
+        "model": "user",
+        "fields": {
+            "first_name": "Lexa",
+            "last_name": "Mphasa",
+            "email": "Lexa.Mphasa@total.co.mw",
+            "username": "J0538202",
+            "password": 0
+        }
+    },
+    {
+        "pk": 89,
+        "model": "user",
+        "fields": {
+            "first_name": "Orton",
+            "last_name": "JUNGU",
+            "email": "Orton.JUNGU@total.co.mw",
+            "username": "J0473397",
+            "password": 0
+        }
+    },
+    {
+        "pk": 90,
+        "model": "user",
+        "fields": {
+            "first_name": "Mmapeu",
+            "last_name": "MAKHAFOLA",
+            "email": "Mmapeu.MAKHAFOLA@total.co.mw",
+            "username": "L0455020",
+            "password": 0
+        }
+    },
+    {
+        "pk": 91,
+        "model": "user",
+        "fields": {
+            "first_name": "Richard",
+            "last_name": "Chirwa",
+            "email": "j0439084@total.co.mw",
+            "username": "j0439084",
+            "password": 0
+        }
+    },
+    {
+        "pk": 92,
+        "model": "user",
+        "fields": {
+            "first_name": "Tipson",
+            "last_name": "MCHENGA",
+            "email": "Tipson.MCHENGA@total.co.mw",
+            "username": "J0507955",
+            "password": 0
+        }
+    },
+    {
+        "pk": 93,
+        "model": "user",
+        "fields": {
+            "first_name": "Mayamiko",
+            "last_name": "CHINTSANYA",
+            "email": "Mayamiko.CHINTSANYA@total.co.mw",
+            "username": "J0509213",
+            "password": 0
+        }
+    },
+    {
+        "pk": 94,
+        "model": "user",
+        "fields": {
+            "first_name": "Sinthani",
+            "last_name": "MUNTHALI",
+            "email": "Sinthani.MUNTHALI@total.co.mw",
+            "username": "J0510605",
+            "password": 0
+        }
+    },
+    {
+        "pk": 95,
+        "model": "user",
+        "fields": {
+            "first_name": "Janet",
+            "last_name": "KACHIKA",
+            "email": "Janet.KACHIKA@total.co.mw",
+            "username": "J0517477",
+            "password": 0
+        }
+    },
+    {
+        "pk": 96,
+        "model": "user",
+        "fields": {
+            "first_name": "William",
+            "last_name": "MBOWE",
+            "email": "William.MBOWE@total.co.mw",
+            "username": "J0517671",
+            "password": 0
+        }
+    },
+    {
+        "pk": 97,
+        "model": "user",
+        "fields": {
+            "first_name": "Alifa",
+            "last_name": "SAIDI",
+            "email": "alifa.SAIDI@total.co.mw",
+            "username": "J0518622",
+            "password": 0
+        }
+    },
+    {
+        "pk": 98,
+        "model": "user",
+        "fields": {
+            "first_name": "Peter",
+            "last_name": "CHIMOTO",
+            "email": "peter.CHIMOTO@total.co.mw",
+            "username": "J0517793",
+            "password": 0
+        }
+    },
+    {
+        "pk": 99,
+        "model": "user",
+        "fields": {
+            "first_name": "Kenton",
+            "last_name": "MNINDI",
+            "email": "kenton.MNINDI@total.co.mw",
+            "username": "J0517789",
+            "password": 0
+        }
+    },
+    {
+        "pk": 100,
+        "model": "user",
+        "fields": {
+            "first_name": "Yusuf",
+            "last_name": "Ayamie",
+            "email": "yusuf.AYAMIE@total.co.mw",
+            "username": "j0517800",
+            "password": 0
+        }
+    },
+    {
+        "pk": 101,
+        "model": "user",
+        "fields": {
+            "first_name": "Harvey",
+            "last_name": "Chamanyeta",
+            "email": "harvey.CHAMANYETA@total.co.mw",
+            "username": "j0517796",
+            "password": 0
+        }
+    },
+    {
+        "pk": 102,
+        "model": "user",
+        "fields": {
+            "first_name": "Moses",
+            "last_name": "KAMBEWA",
+            "email": "Moses.KAMBEWA@total.co.mw",
+            "username": "J0420332",
+            "password": 0
+        }
+    },
+    {
+        "pk": 103,
+        "model": "user",
+        "fields": {
+            "first_name": "Abner",
+            "last_name": "Msanangwe",
+            "email": "Abner.MSANANGWE@total.co.mw",
+            "username": "J0517783",
+            "password": 0
+        }
+    },
+    {
+        "pk": 104,
+        "model": "user",
+        "fields": {
+            "first_name": "Abdul",
+            "last_name": "JAFALI",
+            "email": "Abdul.JAFALI@total.co.mw",
+            "username": "J0420331",
+            "password": 0
+        }
+    },
+    {
+        "pk": 105,
+        "model": "user",
+        "fields": {
+            "first_name": "Salamata",
+            "last_name": "BALL",
+            "email": "Salamata.BALL@total.co.mw",
+            "username": "J0448462",
+            "password": 0
+        }
+    },
+    {
+        "pk": 106,
+        "model": "user",
+        "fields": {
+            "first_name": "Henry",
+            "last_name": "FINCH",
+            "email": "Henry.FINCH@total.co.mw",
+            "username": "J0335402",
+            "password": 0
+        }
+    },
+    {
+        "pk": 107,
+        "model": "user",
+        "fields": {
+            "first_name": "Mbonangile",
+            "last_name": "MUNTHALI",
+            "email": "Mbonangile.MUNTHALI@total.co.mw",
+            "username": "J0532571",
+            "password": 0
+        }
+    },
+    {
+        "pk": 108,
+        "model": "user",
+        "fields": {
+            "first_name": "Joyce",
+            "last_name": "MWAFULIRWA",
+            "email": "Joyce.MWAFULIRWA@total.co.mw",
+            "username": "J0517792",
+            "password": 0
+        }
+    },
+    {
+        "pk": 109,
+        "model": "user",
+        "fields": {
+            "first_name": "Bertha",
+            "last_name": "CHAKACHADZA",
+            "email": "Bertha.CHAKACHADZA@total.co.mw",
+            "username": "J0532707",
+            "password": 0
+        }
+    },
+    {
+        "pk": 110,
+        "model": "user",
+        "fields": {
+            "first_name": "Humphrey",
+            "last_name": "Kumwembe",
+            "email": "hkumwembe@gmail.com",
+            "username": "hkumwembe",
+            "password": 0
+        }
+    },
+    {
+        "pk": 111,
+        "model": "user",
+        "fields": {
+            "first_name": "Takudzwa",
+            "last_name": "Maswaya",
+            "email": "Takudzwa.MASWAYA@total.co.mw",
+            "username": "L0505853",
+            "password": 0
+        }
+    },
+    {
+        "pk": 112,
+        "model": "user",
+        "fields": {
+            "first_name": "Kondwani",
+            "last_name": "Matupa",
+            "email": "Kondwani.Matupa@total.co.mw",
+            "username": "J0535821",
+            "password": 0
+        }
+    },
+    {
+        "pk": 113,
+        "model": "user",
+        "fields": {
+            "first_name": "Mabel",
+            "last_name": "Mbendera",
+            "email": "mabel.mbendera@total.co.mw",
+            "username": "J0537927",
+            "password": 0
+        }
+    },
+    {
+        "pk": 114,
+        "model": "user",
+        "fields": {
+            "first_name": "Robert",
+            "last_name": "Mchinjika",
+            "email": "Robert.Mchinjika@total.co.mw",
+            "username": "J0420802",
+            "password": 0
+        }
+    },
+    {
+        "pk": 115,
+        "model": "user",
+        "fields": {
+            "first_name": "Absalom",
+            "last_name": "BONDO",
+            "email": "absalom.bondo@total.co.mw",
+            "username": "J0538203",
+            "password": 0
+        }
+    },
+    {
+        "pk": 116,
+        "model": "user",
+        "fields": {
+            "first_name": "Francis",
+            "last_name": "MADONA",
+            "email": "Francis.MADONA@total.co.mw",
+            "username": "J0545587",
+            "password": 0
+        }
+    },
+    {
+        "pk": 117,
+        "model": "user",
+        "fields": {
+            "first_name": "Sungeni",
+            "last_name": "MTALIMANJA",
+            "email": "Sungeni.MTALIMANJA@total.co.mw",
+            "username": "J0542200",
+            "password": 0
+        }
+    },
+    {
+        "pk": 118,
+        "model": "user",
+        "fields": {
+            "first_name": "Lonjezo",
+            "last_name": "KAGWIRA",
+            "email": "Lonjezo.KAGWIRA@total.co.mw",
+            "username": "J0492041",
+            "password": 0
+        }
+    },
+    {
+        "pk": 119,
+        "model": "user",
+        "fields": {
+            "first_name": "Bright",
+            "last_name": "EGBUKICHI",
+            "email": "Bright.EGBUKICHI@total.co.mw",
+            "username": "J0249697",
+            "password": 0
+        }
+    },
+    {
+        "pk": 120,
+        "model": "user",
+        "fields": {
+            "first_name": "Felix",
+            "last_name": "BANDA",
+            "email": "Felix.BANDA@total.co.mw",
+            "username": "J0549524",
+            "password": 0
+        }
+    },
+    {
+        "pk": 121,
+        "model": "user",
+        "fields": {
+            "first_name": "Gladys",
+            "last_name": "NGOMA",
+            "email": "gladys.ngoma@total.co.mw",
+            "username": "L0492026",
+            "password": 0
+        }
+    },
+    {
+        "pk": 122,
+        "model": "user",
+        "fields": {
+            "first_name": "Mwiza",
+            "last_name": "LUHANGA",
+            "email": "mwiza.luhanga@total.co.mw",
+            "username": "J0285170",
+            "password": 0
+        }
+    },
+    {
+        "pk": 123,
+        "model": "user",
+        "fields": {
+            "first_name": "Maurice",
+            "last_name": "MPULULA",
+            "email": "maurice.mpulula@total.co.mw",
+            "username": "J1006253",
+            "password": 0
+        }
+    },
+    {
+        "pk": 124,
+        "model": "user",
+        "fields": {
+            "first_name": "Kondwani",
+            "last_name": "Kanyerere",
+            "email": "kondwani.kanyerere@total.co.mw",
+            "username": "J1006260",
+            "password": 0
+        }
+    },
+    {
+        "pk": 125,
+        "model": "user",
+        "fields": {
+            "first_name": "Charity",
+            "last_name": "Matola",
+            "email": "charity.matola@total.co.mw",
+            "username": "J1006259",
+            "password": 0
+        }
+    },
+    {
+        "pk": 126,
+        "model": "user",
+        "fields": {
+            "first_name": "Limbikani",
+            "last_name": "Kabwera",
+            "email": "limbikani.kabwera@total.co.mw",
+            "username": "J1006256",
+            "password": 0
+        }
+    },
+    {
+        "pk": 127,
+        "model": "user",
+        "fields": {
+            "first_name": "Vincent",
+            "last_name": "Linzie",
+            "email": "vincent.linzie@total.co.mw",
+            "username": "J1024721",
+            "password": 0
+        }
+    },
+    {
+        "pk": 128,
+        "model": "user",
+        "fields": {
+            "first_name": "Saulos",
+            "last_name": "MUNTHALI",
+            "email": "saulos.munthali@total.co.mw",
+            "username": "J1024722",
+            "password": 0
+        }
+    },
+    {
+        "pk": 129,
+        "model": "user",
+        "fields": {
+            "first_name": "Donnex",
+            "last_name": "BONIFACE",
+            "email": "Donnex.BONIFACE@total.co.mw",
+            "username": "J1031558",
+            "password": 0
+        }
+    },
+    {
+        "pk": 130,
+        "model": "user",
+        "fields": {
+            "first_name": "Anna",
+            "last_name": "Mwale",
+            "email": "anna.mwale@total.co.mw",
+            "username": "L1022579",
+            "password": 0
+        }
+    }
+]

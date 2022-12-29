@@ -1,0 +1,193 @@
+pk_permissionid,permission,permission_code,description
+2,system.dashboard.view,system.dashboard.view,User view dashboard
+5,system.user.view,system.user.view,Allow user to view users
+6,system.user.add,system.user.add,Allow user to add users
+7,system.user.manage,system.user.manage,Allow user to manage users
+8,system.user.delete,system.user.delete,Allow user to delete users
+9,system.role.view,system.role.view,Allow user to view roles
+10,system.role.add,system.role.add,Allow user to add role
+11,system.role.manage,system.role.manage,Allow user to manage role
+12,system.role.delete,system.role.delete,Allow user to delete role
+13,system.branch.view,system.branch.view,Allow user to view branch
+14,system.branch.add,system.branch.add,Allow user to add branch
+15,system.branch.manage,system.branch.manage,Allow user to manage branch
+16,system.branch.delete,system.branch.delete,allow user to delete branch
+17,system.department.view,system.department.view,Allow users to views departments
+18,system.department.add,system.department.add,Allow users to add departments
+19,system.department.manage,system.department.manage,Allow user to manage department
+20,system.department.delete,system.department.delete,Allow user to delete department
+21,system.form.view,system.form.view,Allow user to view forms
+22,system.form.add,system.form.add,Allow user to add forms
+23,system.form.manage,system.form.manage,Allow user to manage forms
+24,system.form.delete,system.form.delete,Allow user to delete form
+25,system.permission.view,system.permission.view,Allow user to view permissions
+26,system.permission.add,system.permission.add,Allow user to add permissions
+27,system.permission.manage,system.permission.manage,Allow user to manage permissions
+28,system.permission.delete,system.permission.delete,Allow user to delete permissions
+29,system.stage.view,system.stage.view,Allow user to stages
+30,system.stage.add,system.stage.add,Allow users to stages
+31,system.stage.manage,system.stage.manage,Allow user to stages
+32,system.stage.delete,system.stage.delete,Allow users to stages
+33,system.formflow.view,system.formflow.view,Allow users to view formflows
+34,system.formflow.add,system.formflow.add,Allow users to add formflow
+35,system.formflow.manage,system.formflow.manage,Allow users to manage formflow
+36,system.formflow.delete,system.formflow.delete,Allow users to delete formflow
+37,system.profiles.view,system.profiles.view,Allow users to views  profiles
+38,system.projects.view,system.projects.view,Allow users to view projects
+39,system.project.add,system.project.add,Allow users to add project
+40,system.project.manage,system.project.manage,Allow users to manage project
+41,system.project.delete,system.project.delete,Allow users to delete projects
+42,system.dealerwaivers.view,system.dealerwaivers.view,Allow users to manage view dealer waivers
+43,system.dealerwaiver.view,system.dealerwaiver.view,Allow users to view dealer waiver
+44,system.dealerwaiver.add,system.dealerwaiver.add,Allow users to add dealer waiver
+45,system.dealerwaiver.manage,system.dealerwaiver.manage,Allow users to manage dealer waiver
+46,system.dealerwaiver.delete,system.dealerwaiver.delete,Allow users to delete dealerwaiver
+47,system.dealerwaiver.files,system.dealerwaiver.files,Allow users to manage dealer waiver files
+48,system.movedassets.view,system.movedassets.view,Allow users to view moved assets
+49,system.movedasset.view,system.movedasset.view,Allow users to view moved asset
+50,system.movedasset.add,system.movedasset.add,Allow users to add asset moved
+51,system.movedasset.manage,system.movedasset.manage,Allow users to manage moved asset
+52,system.movedasset.delete,system.movedasset.delete,Allow users to delete moved asset
+53,system.movedasset.files,system.movedasset.files,Allow user manage asset movement files
+54,system.staffexpenses.view,system.staffexpenses.view,Allow users to view staff expenses
+55,system.staffexpense.view,system.staffexpense.view,Allow users to view staff expense
+56,system.staffexpense.add,system.staffexpense.add,Allow users users to add staff expense
+57,system.staffexpense.manage,system.staffexpense.manage,Allow users to manage staff expense
+58,system.staffexpense.delete,system.staffexpense.delete,Allow users to delete staff expenses
+59,system.staffexpense.files,system.staffexpense.files,Allow users to manage staff expense files
+60,system.claims.view,system.claims.view,Allow users to views claims
+61,system.claim.view,system.claim.view,Allow users to view claim
+62,system.claim.add,system.claim.add,Allow users to add claim
+63,system.claim.manage,system.claim.manage,Allow users to manage claim
+64,system.claim.delete,system.claim.delete,Allow users to delete claim
+65,system.claim.files,system.claim.files,Allow users to manage claim files
+66,system.creditdebits.view,system.creditdebits.view,Allow users to views credit debits
+67,system.creditdebit.view,system.creditdebit.view,Allow users to view credit debit
+68,system.creditdebit.add,system.creditdebit.add,Allow users to add credit debit
+69,system.creditdebit.manage,system.creditdebit.manage,Allow user to manage credit debit
+70,system.creditdebit.delete,system.creditdebit.delete,Allow user to delete credit debit
+71,system.assetdisposals.view,system.assetdisposals.view,Allow user to view asset disposals
+72,system.assetdisposal.view,system.assetdisposal.view,Allow user to view asset disposal
+73,system.assetdisposal.add,system.assetdisposal.add,Allow users to add asset disposal
+74,system.assetdisposal.manage,system.assetdisposal.manage,Allow users to manage asset disposal
+75,system.assetdisposal.delete,system.assetdisposal.delete,Allow users to delete asset disposal
+76,system.assetdisposal.files,system.assetdisposal.files,Allow users to manage asset disposal
+77,system.payablewaivers.view,system.payablewaivers.view,Allow users to view payable waivers
+78,system.payablewaiver.view,system.payablewaiver.view,Allow users to views payable waiver
+79,system.payablewaiver.add,system.payablewaiver.add,Allow users to add payable waiver
+80,system.payablewaiver.manage,system.payablewaiver.manage,Allow users to manage payable waiver
+81,system.payablewaiver.delete,system.payablewaiver.delete,Allow users to delete payable waiver
+82,system.payablewaiver.files,system.payablewaiver.files,Allow users to manage payable waiver files
+83,system.grantofcredits.view,system.grantofcredits.view,Allow users to view grant of credits
+84,system.supervisorcomment.delete,system.supervisorcomment.delete,Allow users to delete supervisor comment
+85,system.grantofcredit.view,system.grantofcredit.view,Allow users to view grant of credit
+86,system.grantofcredit.add,system.grantofcredit.add,Allow users to add grant of credit
+87,system.grantofcredit.manage,system.grantofcredit.manage,Allow users to manage grant of credits
+88,system.grantofcredit.delete,system.grantofcredit.delete,Allow users to delete grant of credit
+89,system.grantofcredit.files,system.grantofcredit.files,Allow users to manage grant of credit files
+90,system.grantofcredit.budget,system.grantofcredit.budget,Allow users to manage grant of credit budget
+91,system.overtimes.view,system.overtimes.view,Allow users to views overtimes
+92,system.overtime.view,system.overtime.view,Allow users to view overtime
+93,system.overtime.add,system.overtime.add,Allow users to add overtime
+94,system.overtime.manage,system.overtime.manage,Allow users to manage overtime
+95,system.overtime.delete,system.overtime.delete,Allow users to delete overtime
+96,system.overtime.files,system.overtime.files,Allow users to manage overtime
+97,system.travels.view,system.travels.view,Allow users to view travels
+98,system.travel.view,system.travel.view,Allow user to view travel
+99,system.travel.add,system.travel.add,Allow user to add travel
+100,system.travel.manage,system.travel.manage,Allow user to manage travel
+101,system.travel.delete,system.travel.delete,Allow user to delete travel
+102,system.travel.files,system.travel.files,Allow users to manage files
+103,system.root.access,system.root.access,Allow users to access everything in the system.
+104,system.loans.view,system.loans.view,All user to view loans
+105,system.loan.view,system.loan.view,Allow user to view loan
+106,system.loan.add,system.loan.add,All user to add loan
+107,system.loan.manage,system.loan.manage,Allow user to manage loan
+108,system.loan.delete,system.loan.delete,Allow user to delete loan
+109,system.loan.files,system.loan.files,Allow users to manage files
+110,system.mileages.view,system.mileages.view,Allo user to view mileages
+111,system.mileage.view,system.mileage.view,Allow users tp view mileage
+112,system.mileage.add,system.mileage.add,Allow users to add mileage
+113,system.mileage.manage,system.mileage.manage,Allow users to manage mileage
+114,system.mileage.delete,system.mileage.delete,Allow users to delete mileage
+115,system.mileage.files,system.mileage.files,Allow users to manage files
+116,system.inductions.view,system.inductions.view,Allow user to view inductions
+117,system.induction.view,system.induction.view,Allow users to view induction
+118,system.induction.add,system.induction.add,Allow users to add induction programme
+119,system.induction.manage,system.induction.manage,Allow user to manage induction programme
+120,system.induction.delete,system.induction.delete,Allow user to delete induction programme
+121,system.induction.files,system.induction.files,Allow user to manage induction programme files.
+122,system.newemployees.view,system.newemployees.view,Allow users to view all new employees
+123,system.newemployee.view,system.newemployee.view,Allow user to vew new employee
+124,system.newemployee.add,system.newemployee.add,Allow users to add new employee
+125,system.newemployee.manage,system.newemployee.manage,Allow usets to manage new employee
+126,system.newemployee.delete,system.newemployee.delete,Allow users to delete new employee
+127,system.newemployee.files,system.newemployee.files,Allow users to manage files
+128,system.equipments.view,system.equipments.view,Allow user to view it equipments
+129,system.equipment.view,system.equipment.view,Allow user to view IT equipment
+130,system.equipment.add,system.equipment.add,Allow user to request equipment
+131,system.equipment.manage,system.equipment.manage,Allow user to manage requested IT equipment
+132,system.equipment.delete,system.equipment.delete,Allow user to delete IT equipment
+133,system.equipment.files,system.equipment.files,Allow user to manage requested equiment files
+134,system.roleapplications.view,system.roleapplications.view,Allow user to view role and  applications requests
+135,system.roleapplication.view,system.roleapplication.view,Allow user view role applications
+136,system.roleapplication.add,system.roleapplication.add,Allow user to add role application request.
+137,system.roleapplication.manage,system.roleapplication.manage,Allow user to manage role applications request
+138,system.roleapplication.delete,system.roleapplication.delete,Allow user to delete role application request
+139,system.roleapplication.files,system.roleapplication.files,Allow users to manage role applications files
+140,system.procurements.view,system.procurements.view,Allow users to views procurement requests
+141,system.procurement.view,system.procurement.view,Allow users to view procurement requests
+142,system.procurement.add,system.procurement.add,Allow users to add procurement requests
+143,system.procurement.manage,system.procurement.manage,Allow users to manage procurement requests
+144,system.procurement.delete,system.procurement.delete,Allow users to delete procurement requests files
+145,system.procurement.files,system.procurement.files,Allow user to manage procurement files
+146,system.costcomparison.manage,system.costcomparison.manage,Allow user to manage cost comparison
+147,system.vendors.view,system.vendors.view,Allow users to view vendors
+148,system.vendor.view,system.vendor.view,Allow users to view vendors
+149,system.vendor.add,system.vendor.add,Allow user to add vendor
+150,system.vendor.manage,system.vendor.manage,Allow user to manage vendors
+151,system.vendor.delete,system.vendor.delete,Allow user to delete vendors
+152,system.vendor.files,system.vendor.files,Allow user to manage vendor files
+153,system.stationeryrequests.view,system.stationeryrequests.view,Allow user to view stationery request
+154,system.stationeryrequest.view,system.stationeryrequest.view,Allow user  to view stationery request
+155,system.stationeryrequest.add,system.stationeryrequest.add,Allow users to add stationery request
+156,system.stationeryrequest.manage,system.stationeryrequest.manage,Allow user to manage stationery request
+157,system.stationeryrequest.delete,system.stationeryrequest.delete,Allow user to delete stationery request
+158,system.stationeryrequest.files,system.stationeryrequest.files,Allow user to manage request files
+159,system.customeraccounts.view,system.customeraccounts.view,Allow user to view customer accounts
+160,system.customeraccount.view,system.customeraccount.view,Allow user to view customer account
+161,system.customeraccount.add,system.customeraccount.add,Allow user to create customer account
+162,system.customeraccount.manage,system.customeraccount.manage,Allow user to manage customer account
+163,system.customeraccount.delete,system.customeraccount.delete,Allow user delete customer account
+164,system.customeraccount.files,system.customeraccount.files,Allow user to manage customer account files
+165,system.internalmemos.view,system.internalmemos.view,Allow user to view internal memos
+166,system.internalmemo.view,system.internalmemo.view,Allow user to view internal memo
+167,system.internalmemo.add,system.internalmemo.add,Allow user to add internal memo
+168,system.internalmemo.manage,system.internalmemo.manage,Allow user to manage internal memos
+169,system.internalmemo.delete,system.internalmemo.delete,Allow user to delete internal memo
+170,system.internalmemo.files,system.internalmemo.files,Allow user to manage files
+171,system.wastes.view,system.wastes.view,Allow users to view wastes
+172,system.waste.view,system.waste.view,Allow user to view waste
+173,system.waste.add,system.waste.add,Allow user to request waste management
+174,system.waste.manage,system.waste.manage,Allow user to manage waste management request
+175,system.waste.delete,system.waste.delete,Allow user to manage waste management requests
+176,system.waste.files,system.waste.files,Allow user to manage waste
+177,system.loantype.view,system.loantype.view,Allow users to view loan types
+178,system.loantype.add,system.loantype.add,Allow users to add loan type
+179,system.loantype.manage,system.loantype.manage,Allow users to manage loan type
+180,system.loantype.delete,system.loantype.delete,Allow users to delete loan type
+181,module.humanresource.view,module.humanresource.view,Allow users to view human resources module
+182,module.IT.view,module.IT.view,Allow users to view IT module
+183,module.finance.view,module.finance.view,Allow users to view finance module
+184,module.marketingandcommunication.view,module.marketingandcommunication.view,Allow users to view marketing and communication module
+185,module.systemadministration.view,module.systemadministration.view,Allow users to access administration module
+186,module.procurement.view,module.procurement.view,Allow users to view procurement module
+187,system.stationery.view,system.stationery.view,Allow users to view stationery
+188,system.stationery.add,system.stationery.add,Allow users to add stationery
+189,system.stationery.manage,system.stationery.manage,Allow users to manage stationery
+190,system.stationery.delete,system.stationery.delete,Allow users to delete stationery
+191,system.inductionactivities.view,system.inductionactivities.view,system.inductionactivities.view
+192,system.inductionactivities.add,system.inductionactivities.add,system.inductionactivities.add
+193,system.inductionactivities.manage,system.inductionactivities.manage,system.inductionactivities.manage
+194,system.inductionactivities.delete,system.inductionactivities.delete,system.inductionactivities.delete
+195,system.approvedallowance.add,system.approvedallowance.add,system.approvedallowance.add

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<html class="no-js lt-ie9 lt-ie8">
+<html class="no-js lt-ie9">
+<html class="no-js">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            text-align: center !important;
+            font-family: sans-serif;
+            font-size: 14px !important;
+        }
+
+        .welcome-msg {
+            text-align: center !important;
+            padding: 20px;
+            background-color: #f5365c;
+            color: #FFF !important;
+        }
+
+        .account-msg {
+            background-color: #e6f5ff;
+            padding: 20px;
+            color: gray;
+            text-align: center !important;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .button {
+            background-color: #007bff;
+            padding: 15px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            color: #FFF !important;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #3399ff;
+            padding: 15px;
+            border: 1px solid #3399ff;
+            border-radius: 4px;
+            color: #FFF !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='registration-email'>
+        <p>Dear {{approver}}</p>
+        <div class=welcome-msg>
+            <h1>Datapoint Request</h1>
+            <h3>You have a new workflow for your attention</h3>
+            <br>
+            <p><a class="button" href="https://tmldatapoint.web.app/#/{{url}}">Click for details</a></p>
+        </div>
+        <div class='account-msg'>
+            <h2>Request details</h2>
+            <p><strong>Request</strong>: {{process}}</p>
+            <p><strong>Requested by</strong>: {{requested_by}}</p>
+            <p><strong>Date</strong>: {{date}} </p>
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>

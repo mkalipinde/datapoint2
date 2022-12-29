@@ -1,0 +1,76 @@
+role,description
+Administrator,Super user of the system with all the rights
+Staff,Member of staff may belong to different departments.
+Human Resources Manager,Human Resources Manager
+Administration and Finance Manager,Administration and Finance Manager
+Management Accountant,Management Accountant
+Chief Accountant,Chief Accountant
+Purchasing Manager,Purchasing Manager
+Purchasing Assistant,Purchasing Assistant
+Treasurer,Treasurer
+Assistant treasurer,Assistant treasurer
+IT supervisor,IT supervisor
+Management  Trainee- Finance,Management  Trainee- Finance
+Payables accountant,Payables accountant
+General ledger Accountant,General ledger Accountant
+Fixed asset Accountant,Fixed asset Accountant
+Inventory accountant,Inventory accountant
+Operations Manager,Operations Manager
+Transport Manager,Transport Manager
+Projects Engineer,Projects Engineer
+Depots Maintenance Engineer,Depots Maintenance
+Maintenance Engineer,Maintenance Engineer
+Depots and Supply Manager,Sales
+Management Trainee operations,Management Trainee operations
+Depot Manager,Depot Manager
+Depot Assistant,Depot Assistant
+HSSEQ Manager,HSSEQ Manager
+HSSEQ Officer,HSSEQ Officer
+Human Resource Officer,Human Resource Officer
+MD's personal Assistant,MD's personal Assistant
+Receptionist,Receptionist
+Commercial Manager -General Trade,Commercial Manager -General Trade
+Network Territory Manager,Network Territory Manager
+General Trade manager,General Trade manager
+Lubes and specialties Manager,Lubes and specialties Manager
+Lubes Engineer,Lubes Engineer
+Retail training and develop,Retail training and develop
+Marketing and Communications Officer,Marketing and Communications Officer
+Territory manager Retail,Territory manager Retail
+Territory manager GT,Territory manager GT
+Solar Coordinator,Solar Coordinator
+Card Executive,Card Executive
+Customer Service Manager,Customer Service Manager
+Plus card Officer,Plus card Officer
+Card admin executive,Card admin executive
+Customer Service Representative,Customer Service Representative
+Management  Trainee- Commercial,Management  Trainee- Commercial
+Managing Director,Managing Director
+Chairman,Total Malawi Chairman
+Initiator,All users in the system
+HOD,Head of department
+Credit Controler,responsible for credit control
+Auditor,Internal Auditing
+Field Maintenance Engineer,Maintenance works
+Depots Technician,Maintenance of depots
+Retail Development And Training Manager,Trainings
+Retail Development Manager,Retail Development Manager
+Maintenance Technician,Maintenance Technician
+SFS MERCHANDISER,SFS MERCHANDISER
+Regional Manager,Regional Manager
+Staff duplicate,Member of staff may belong to different departments. ( Edit duplicate description )
+Human Resource Manager,HR Head
+Depot Supervisor,Depot Supervisor
+MD's Driver,MD's Driver
+Depot Operator,Depot Operator
+Business Development Manager,Business Development Manager
+Site Supervisor,Customer Site Supervisor
+Corporate Affairs Manager,Corporate Affairs
+IT  & Digital Officer,IT  & Digital Officer
+Network Commercial Manager,Head of Department - Network Commercial Manager
+Commercial Manager -General Trade,Commercial Manager -General Trade
+Auditor ( Edit duplicate role ),Internal Auditing ( Edit duplicate description )
+Legal Management Trainee,Legal Management Trainee
+Consolidation Manager,Consolidation Manager
+Chief Accountant ( Edit duplicate role ),Chief Accountant ( Edit duplicate description )
+Special Projects Coordinator,Special Projects Coordinator

@@ -886,6 +886,83 @@ class HandoverViewSet(viewsets.ModelViewSet):
     queryset = Handover.objects.all()
     serializer_class = HandoverSerializer
 
+class CardAccountLoadingViewSet(viewsets.ModelViewSet):
+    queryset = Cal.objects.filter()
+    serializer_class = CardAccountLoadingSerializer
+
+    def destroy(self, request, pk=None):
+        cal = Cal.objects.get(pk=pk)
+        ManageRequest.delete_request(pk, cal.fk_processid)
+        cal.status = 0
+        cal.save()
+        return Response({'status': 'Not found'}, status=status.HTTP_404_NOT_FOUND)  
+
+class CardLoadItemsViewSet(viewsets.ModelViewSet):
+    queryset = CardItem.objects.all()
+    serializer_class = CardLoadItemsSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        data = ViewsHelper.filter_cal(
+            self, queryset, self.request.query_params.get('fk_cal_id'))
+        return data    
+
+class CardCreateViewSet(viewsets.ModelViewSet):
+    queryset = Cao.objects.filter()
+    serializer_class = CardCreateSerializer
+
+    def destroy(self, request, pk=None):
+        cao = Cao.objects.get(pk=pk)
+        ManageRequest.delete_request(pk, cao.fk_processid)
+        cao.status = 0
+        cao.save()
+        return Response({'status': 'Not found'}, status=status.HTTP_404_NOT_FOUND)  
+
+class CardCreateItemsViewSet(viewsets.ModelViewSet):
+    queryset = CardCreateItem.objects.all()
+    serializer_class = CardCreateItemsSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        data = ViewsHelper.filter_cao(
+            self, queryset, self.request.query_params.get('fk_cao_id'))
+        return data    
+
+
+class CacViewSet(viewsets.ModelViewSet):
+    queryset = Cac.objects.filter()
+    serializer_class = CacSerializer
+
+    def destroy(self, request, pk=None):
+        cac = Cac.objects.get(pk=pk)
+        ManageRequest.delete_request(pk, cac.fk_processid)
+        cac.status = 0
+        cac.save()
+        return Response({'status': 'Not found'}, status=status.HTTP_404_NOT_FOUND)  
+
+
+
+class CacProductViewSet(viewsets.ModelViewSet):
+    queryset = CacProduct.objects.all()
+    serializer_class = CacProductSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        data = ViewsHelper.filter_cac(
+            self, queryset, self.request.query_params.get('fk_cac_id'))
+        return data   
+
+
+class CacLubricantViewSet(viewsets.ModelViewSet):
+    queryset = CacLubricant.objects.all()
+    serializer_class = CacLubricantSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        data = ViewsHelper.filter_cac(
+            self, queryset, self.request.query_params.get('fk_cac_id'))
+        return data               
+
 
 class Security():
     def SecureAccess(self, code):

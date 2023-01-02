@@ -358,6 +358,31 @@ router.register(
     basename='Handover'
 )
 
+router.register(
+    r'caos',
+    views.CardCreateViewSet,
+    basename='Return all card account openings')
+
+router.register(
+    r'card_create_items',
+    views.CardCreateItemsViewSet,
+    basename='Fetched by fk_cao_id similar to expense sheet')  
+
+router.register(
+    r'cacs',
+    views.CacViewSet,
+    basename='Return all card account customizations')  
+
+router.register(
+    r'cac_products',
+    views.CacProductViewSet,
+    basename='Fetched by fk_cac_id')      
+
+router.register(
+    r'cac_lubricants',
+    views.CacLubricantViewSet,
+    basename='Fetched by fk_cac_id')             
+
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="home.html"), name="home"),
     # url('^$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),

@@ -1321,3 +1321,130 @@ class HandoverSerializer(serializers.ModelSerializer):
     class Meta:
         model = Handover
         fields = ('__all__')
+
+class CardLoadItemsSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CardItem
+        fields = ('__all__')        
+
+class CardAccountLoadingSerializer(serializers.ModelSerializer):
+    card_items = CardLoadItemsSerializer(read_only=True, many=True)
+    status = serializers.SerializerMethodField('get_status')
+
+    def get_status(self, obj):
+        try:
+            request = Request.objects.get(
+                workflow_id=obj.pk_cal_id, fk_processid=obj.fk_processid_id)
+            approval = Approval.objects.get(
+                fk_requestid=request.pk_requestid, status=1)
+            data = {'approval_status': approval.approval_status,
+                    'approval_stage': approval.fk_process_approval_stageid.fk_approval_stageid.approval_stage}
+        except Approval.DoesNotExist:
+            data = {'approval_status': "Not Submited", 'approval_stage': None}
+        return data
+
+    class Meta:
+        model = Cal
+        fields = ('__all__')
+
+    def create(self, validated_data, instance=None):
+
+        cal = Cal.objects.create(**validated_data)
+        cal.save()
+
+        profileId = SerializerHelper.get_profile_id(
+            self, self.context['request'].user.id)
+
+        SerializerHelper.create_request(
+            self, cal.fk_processid, cal.pk_cal_id, profileId)
+
+        return cal       
+
+
+class CardCreateItemsSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CardCreateItem
+        fields = ('__all__')        
+
+class CardCreateSerializer(serializers.ModelSerializer):
+    cao_items = CardCreateItemsSerializer(read_only=True, many=True)
+    status = serializers.SerializerMethodField('get_status')
+
+    def get_status(self, obj):
+        try:
+            request = Request.objects.get(
+                workflow_id=obj.pk_cao_id, fk_processid=obj.fk_processid_id)
+            approval = Approval.objects.get(
+                fk_requestid=request.pk_requestid, status=1)
+            data = {'approval_status': approval.approval_status,
+                    'approval_stage': approval.fk_process_approval_stageid.fk_approval_stageid.approval_stage}
+        except Approval.DoesNotExist:
+            data = {'approval_status': "Not Submited", 'approval_stage': None}
+        return data
+
+    class Meta:
+        model = Cao
+        fields = ('__all__')
+
+    def create(self, validated_data, instance=None):
+
+        cao = Cao.objects.create(**validated_data)
+        cao.save()
+
+        profileId = SerializerHelper.get_profile_id(
+            self, self.context['request'].user.id)
+
+        SerializerHelper.create_request(
+            self, cao.fk_processid, cao.pk_cao_id, profileId)
+
+        return cao    
+
+
+class CacLubricantSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CacLubricant
+        fields = ('__all__')  
+
+
+class CacProductSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = CacProduct
+        fields = ('__all__')  
+
+
+class CacSerializer(serializers.ModelSerializer):
+    cac_lubricants = CacLubricantSerializer(read_only=True, many=True)
+    cac_products = CacProductSerializer(read_only=True, many=True)
+    status = serializers.SerializerMethodField('get_status')
+
+    def get_status(self, obj):
+        try:
+            request = Request.objects.get(
+                workflow_id=obj.pk_cac_id, fk_processid=obj.fk_processid_id)
+            approval = Approval.objects.get(
+                fk_requestid=request.pk_requestid, status=1)
+            data = {'approval_status': approval.approval_status,
+                    'approval_stage': approval.fk_process_approval_stageid.fk_approval_stageid.approval_stage}
+        except Approval.DoesNotExist:
+            data = {'approval_status': "Not Submited", 'approval_stage': None}
+        return data
+
+    class Meta:
+        model = Cac
+        fields = ('__all__')
+
+    def create(self, validated_data, instance=None):
+        cac = Cac.objects.create(**validated_data)
+        cac.save()
+
+        profileId = SerializerHelper.get_profile_id(
+            self, self.context['request'].user.id)
+
+        SerializerHelper.create_request(
+            self, cac.fk_processid, cac.pk_cac_id, profileId)
+
+        return cac    

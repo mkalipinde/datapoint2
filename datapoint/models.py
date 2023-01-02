@@ -9,6 +9,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from rest_framework import status
+from jsonfield import JSONField
 
 
 class ApiLog(models.Model):
@@ -937,3 +938,177 @@ class Handover(models.Model):
 
     class Meta:
         db_table = 'handover'
+
+class Cal(models.Model):
+    pk_cal_id = models.AutoField(primary_key=True)
+    fk_processid = models.ForeignKey(Process, models.DO_NOTHING, db_column='fk_processid')
+    client_name = models.TextField(blank=True, null=True)
+    account = models.CharField(max_length=45)
+    cards = JSONField()
+    date = models.DateField()
+    status = models.BooleanField(default=1)
+
+    class Meta:
+
+        db_table = 'cal'
+
+
+class CardItem(models.Model):
+    pk_card_id = models.AutoField(primary_key=True)
+    fk_cal_id = models.ForeignKey(Cal, models.DO_NOTHING, db_column='fk_cal_id', related_name="card_items")
+    card_number = models.CharField(max_length=45)
+    card_name = models.TextField(blank=True, null=True)
+    pin = models.IntegerField()
+    management_code = models.TextField(blank=True, null=True)
+    geographical_zone = models.TextField(blank=True, null=True)
+    litres = models.IntegerField()
+    override_possibility = models.TextField(blank=True, null=True)
+    amount_credited = models.IntegerField()
+    cal = models.TextField(blank=True, null=True)
+    date = models.DateField()
+    
+    class Meta:
+
+        db_table = 'card_item'   
+
+
+
+class Cao(models.Model):
+    pk_cao_id = models.AutoField(primary_key=True)
+    fk_processid = models.ForeignKey(Process, models.DO_NOTHING, db_column='fk_processid')
+    company_name = models.TextField(blank=True, null=True)
+    applicant_name = models.CharField(max_length=200)
+    applicant_designation = models.CharField(max_length=100)
+    applicant_phone = models.CharField(max_length=100)
+    address = models.TextField(blank=True, null=True)
+    card_type = models.TextField(blank=True, null=True)
+    request_type = models.CharField(max_length=100)
+    cards = JSONField()
+    date = models.DateField()
+    status = models.BooleanField(default=1)
+
+    class Meta:
+
+        db_table = 'cao'
+
+
+class CardCreateItem(models.Model):
+    pk_card_id = models.AutoField(primary_key=True)
+    fk_cao_id = models.ForeignKey(Cao, models.DO_NOTHING, db_column='fk_cao_id', related_name="cao_items")
+    card_name = models.TextField(blank=True, null=True)
+    reg_number = models.CharField(max_length=45)
+    prod_service = models.CharField(max_length=45)
+    value = models.IntegerField()
+    mileage_check = models.CharField(max_length=100)
+    tank_cap = models.IntegerField()
+    tank_cap_override = models.CharField(max_length=100)
+    pin = models.IntegerField()
+    management_code = models.TextField(blank=True, null=True)
+    auth_days = models.CharField(max_length=100)
+    auth_hrs = models.CharField(max_length=100)
+    period_override = models.CharField(max_length=100)
+    geographical_zone = models.TextField(blank=True, null=True)
+    override_geo = models.CharField(max_length=100)
+    monthly_volume_limit = models.IntegerField()
+    override_volume = models.CharField(max_length=100)
+    monthly_credit_limit = models.IntegerField()
+    override_credit = models.CharField(max_length=100)
+    
+    class Meta:
+        db_table = 'card_create_item'    
+
+
+class Cac(models.Model):
+    pk_cac_id=models.AutoField(primary_key=True)
+    fk_processid=models.ForeignKey(Process, models.DO_NOTHING, db_column='fk_processid')
+    date=models.CharField(max_length=100)
+    request_type=models.CharField(max_length=100)
+    name=models.CharField(max_length=100)
+    contract_ref=models.CharField(max_length=100)
+    channel=models.CharField(max_length=100)
+    sub_channel=models.CharField(max_length=100)
+    supply_ref=models.CharField(max_length=100)
+    area_n_salesman=models.CharField(max_length=100)
+    ownership=models.CharField(max_length=100)
+    litre_rate=models.IntegerField()
+    service_charge=models.CharField(max_length=100)
+    discount=models.CharField(max_length=100)
+    fin_charges=models.CharField(max_length=100)
+    security_deposit=models.CharField(max_length=100)
+    rent=models.CharField(max_length=100)
+    capacities=models.CharField(max_length=100)
+    credit_limit=models.CharField(max_length=100)
+    bank_guarantee=models.CharField(max_length=100)
+    payment_mode=models.CharField(max_length=100)
+    tax_status=models.CharField(max_length=100)
+    pin=models.CharField(max_length=100)
+    other=models.CharField(max_length=100)
+    cus_address=models.CharField(max_length=100)
+    phone=models.CharField(max_length=100)
+    contact_name=models.CharField(max_length=100)
+    contact_email=models.CharField(max_length=100)
+    delivery_address=models.CharField(max_length=100)
+    delivery_phone=models.CharField(max_length=100)
+    delivery_contact_name=models.CharField(max_length=100)
+    delivery_telex=models.CharField(max_length=100)
+    distance_from_depot=models.CharField(max_length=100)
+    dr_kg_rate=models.CharField(max_length=100)
+    dr_from=models.CharField(max_length=100)
+    rebate_rate=models.CharField(max_length=100)
+    rebate_ceiling=models.CharField(max_length=100)
+    cd_ac=models.CharField(max_length=100)
+    cd_look_up_code=models.CharField(max_length=100)
+    cd_bf_bal=models.CharField(max_length=100)
+    cd_third_party=models.CharField(max_length=100)
+    cd_channel=models.CharField(max_length=100)
+    cd_sales=models.CharField(max_length=100)
+    cd_dormant=models.CharField(max_length=100)
+    cd_fin_charges=models.CharField(max_length=100)
+    cd_access_group=models.CharField(max_length=100)
+    cd_comments=models.CharField(max_length=100)
+    cd_pin_code=models.CharField(max_length=100)
+    cd_crd_limit=models.CharField(max_length=100)
+    cd_payment_terms=models.CharField(max_length=100)
+    cd_cus_address_code=models.CharField(max_length=100)
+    cd_cus_fiscal_st=models.CharField(max_length=100)
+    cd_cus_crd_cntrl=models.CharField(max_length=100)
+    cd_cus_comments=models.CharField(max_length=100)
+    cd_dv_address_code=models.CharField(max_length=100)
+    cd_dv_dist=models.CharField(max_length=100)
+    cd_dv_fiscal_st=models.CharField(max_length=100)
+    cd_dv_crd_ctrl=models.CharField(max_length=100)
+    cd_dv_comments=models.CharField(max_length=100)  
+    status = models.BooleanField(default=1)
+
+    class Meta:
+        db_table = 'cac'    
+
+class CacLubricant(models.Model):  
+    pk_lubricant_id=models.AutoField(primary_key=True)
+    fk_cac_id = models.ForeignKey(Cac, models.DO_NOTHING, db_column='fk_cac_id', related_name="cac_lubricants")
+    lubricant_number=models.IntegerField()
+    currency=models.CharField(max_length=100)
+    product=models.CharField(max_length=100)
+    desc=models.TextField()
+    unit_price=models.IntegerField()
+    litres=models.IntegerField()
+    cac_from=models.CharField(max_length=100)
+    to=models.CharField(max_length=100)
+
+    class Meta:
+        db_table = 'cac_lubricant'  
+
+
+
+class CacProduct(models.Model):  
+    pk_product_id=models.AutoField(primary_key=True)
+    fk_cac_id = models.ForeignKey(Cac, models.DO_NOTHING, db_column='fk_cac_id', related_name="cac_products")
+    product_name=models.CharField(max_length=100)
+    litre_rate=models.IntegerField()
+    litre_from=models.CharField(max_length=100)
+    unit_rate=models.IntegerField()
+    unit_from=models.CharField(max_length=100)
+    cyl_bulk=models.CharField(max_length=100)
+
+    class Meta:
+        db_table = 'cac_product'                         

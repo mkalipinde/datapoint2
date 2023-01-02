@@ -368,7 +368,17 @@ class ViewsHelper:
             fk_requestid_id=request, status=1).update(approval_status='AP')
         return approval
 
-    # def reject_request(request):
-    #     approval = Approval.objects.filter(
-    #         fk_requestid_id=request, status=1).update(approval_status='RE')
-    #     return approval
+    def filter_cal(self, queryset, calId):
+        if calId != None:
+            return queryset.filter(fk_cal_id=calId)
+        return queryset
+
+    def filter_cao(self, queryset, caoId):
+        if caoId != None:
+            return queryset.filter(fk_cao_id=caoId)
+        return queryset        
+
+    def filter_cac(self, queryset, cacId):
+        if cacId != None:
+            return queryset.filter(fk_cac_id=cacId)
+        return queryset               

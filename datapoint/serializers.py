@@ -1329,7 +1329,7 @@ class CardLoadItemsSerializer(serializers.ModelSerializer):
         fields = ('__all__')        
 
 class CardAccountLoadingSerializer(serializers.ModelSerializer):
-    card_items = CardLoadItemsSerializer(read_only=True, many=True)
+    # card_items = CardLoadItemsSerializer(read_only=True, many=True)
     status = serializers.SerializerMethodField('get_status')
 
     def get_status(self, obj):
@@ -1369,7 +1369,7 @@ class CardCreateItemsSerializer(serializers.ModelSerializer):
         fields = ('__all__')        
 
 class CardCreateSerializer(serializers.ModelSerializer):
-    cao_items = CardCreateItemsSerializer(read_only=True, many=True)
+    # cao_items = CardCreateItemsSerializer(read_only=True, many=True)
     status = serializers.SerializerMethodField('get_status')
 
     def get_status(self, obj):
@@ -1417,8 +1417,8 @@ class CacProductSerializer(serializers.ModelSerializer):
 
 
 class CacSerializer(serializers.ModelSerializer):
-    cac_lubricants = CacLubricantSerializer(read_only=True, many=True)
-    cac_products = CacProductSerializer(read_only=True, many=True)
+    # cac_lubricants = CacLubricantSerializer(read_only=True, many=True)
+    # cac_products = CacProductSerializer(read_only=True, many=True)
     status = serializers.SerializerMethodField('get_status')
 
     def get_status(self, obj):

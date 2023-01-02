@@ -359,6 +359,16 @@ router.register(
 )
 
 router.register(
+    r'cals',
+    views.CardAccountLoadingViewSet,
+    basename='Return all card account loadings')
+
+router.register(
+    r'card_load_items',
+    views.CardLoadItemsViewSet,
+    basename='Fetched by fk_cal_id similar to expense sheet')    
+
+router.register(
     r'caos',
     views.CardCreateViewSet,
     basename='Return all card account openings')

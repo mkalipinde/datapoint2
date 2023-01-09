@@ -63,5 +63,14 @@ class UrlHelper:
         elif (process_code == "ST"):
             return 'stationery'
 
+        elif (process_code == "CAL"):
+            return 'pluscard-loading'
+
+        elif (process_code == "CAO"):
+            return 'pluscard-account-opening'  
+
+        elif (process_code == "CAC"):
+            return 'pluscard-customization'                     
+
         else:
             return False    

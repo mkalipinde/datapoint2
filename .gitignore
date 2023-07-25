@@ -10,7 +10,6 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media
-api/settings.py
 datapoint/migrations/
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
@@ -126,6 +125,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .env
+api/.env
 wsgi.py
-requirements.txt
+venv
 # End of https://www.gitignore.io/api/django

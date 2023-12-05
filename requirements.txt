@@ -22,3 +22,5 @@ sqlparse==0.4.3
 tzdata==2022.6
 uritemplate==4.1.1
 whitenoise==6.5.0
+django-storages==1.14.2
+google-cloud-storage=2.13.0

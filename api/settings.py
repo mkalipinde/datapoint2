@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import environ
 import datetime
+from google.oauth2 import service_account
 
 env = environ.Env(
     # set casting, default value
@@ -214,3 +215,10 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = env('EMAIL_PORT')
 DEFAULT_FROM_EMAIL = 'no-reply@totalmalawisystems.com'
 EMAIL_USE_TLS = True
+
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'datapointapi'
+GS_PROJECT_ID = 'tmldatapointapi'
+GS_CREDENTIALS =  service_account.Credentials.from_service_account_file(os.path.join(BASE_DIR, 'api/5529a3381e54.json'))

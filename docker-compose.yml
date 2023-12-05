@@ -2,29 +2,24 @@ version: "3"
 services:
   datapointdb:
     container_name: datapointdb
+    platform: linux/x86_64
     image: mysql:5.7.30
     environment:
-      MYSQL_USER: "root"
-      MYSQL_ROOT_PASSWORD: "manager"
+      MYSQL_USER: "datapoint"
+      MYSQL_ROOT_PASSWORD: "datapoint"
       MYSQL_DATABASE: "datapoint"
     ports:
       - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
   datapoint-api:
     container_name: dataPoint-api
     build: .
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
-      - .:/api
+      - .:/app
     ports:
       - "8000:8000"
     depends_on:
       - datapointdb
     restart: always
-    environment:
-      SECRET_KEY: "manage"
-
-  #mysql web client
-  adminer:
-    image: adminer
-    ports:
-      - 8090:8080

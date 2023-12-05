@@ -128,4 +128,7 @@ dmypy.json
 api/.env
 wsgi.py
 venv
+mysql-data
+api/5529a3381e54.json
+
 # End of https://www.gitignore.io/api/django

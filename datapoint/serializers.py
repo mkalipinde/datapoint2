@@ -1076,6 +1076,11 @@ class ApprovalRoleSerializer(serializers.ModelSerializer):
 class FileSerializer(serializers.ModelSerializer):
     # request = RequestSerializer(source='fk_requestid', read_only=True)
 
+    # def create(self, validated_data):
+    #     print(validated_data)
+    #     instance = super().create(validated_data)
+    #     return instance
+
     class Meta:
         model = File
         fields = ('__all__')

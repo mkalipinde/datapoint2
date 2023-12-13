@@ -1202,7 +1202,6 @@ class ApprovalSerializer(serializers.ModelSerializer):
                             'fk_process_stage_approverid', 'fk_process_approval_stageid', 'status', 'process_id', 'isDenied']
 
     def create(self, validated_data):
-        # validated_data = data.testData()
         approval = Approval()
         profileId = SerializerHelper.get_profile_id(
             self, self.context['request'].user.id)

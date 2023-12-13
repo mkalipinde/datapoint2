@@ -72,12 +72,7 @@ class SerializerHelper:
     def approve_request(self, validated_data, profileId, financial_year):
         process_id = validated_data.get('process_id')
         comment = validated_data.get('comment')
-
-        keys = validated_data.keys()
-        # request_id = validated_data.get('fk_requestid').pk_requestid
         request_id = validated_data.get('fk_requestid').pk_requestid
-
-     
 
         approval_stages = ViewsHelper.get_process_approval_stages(
             self, ProcessApprovalStage.objects.all(), process_id)

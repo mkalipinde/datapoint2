@@ -1452,3 +1452,30 @@ class CacSerializer(serializers.ModelSerializer):
             self, cac.fk_processid, cac.pk_cac_id, profileId)
 
         return cac    
+
+class ProjectStakeholderSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ProjectStakeholder
+        fields = ('__all__')  
+
+class ProjectMilestoneSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ProjectMilestone
+        fields = ('__all__')  
+
+class ProjectStaffResSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ProjectStaffRes
+        fields = ('__all__')  
+
+class ProjectRequestSerializer(serializers.ModelSerializer):
+    staff_resources = ProjectStaffResSerializer(read_only=True, many=True)
+    stakeholders = ProjectStakeholderSerializer(read_only=True, many=True)
+    milestones = ProjectMilestoneSerializer(read_only=True, many=True)
+
+    class Meta:
+        model = ProjectRequest
+        fields = ('__all__')  

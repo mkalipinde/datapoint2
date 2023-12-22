@@ -1112,3 +1112,57 @@ class CacProduct(models.Model):
 
     class Meta:
         db_table = 'cac_product'                         
+
+class ProjectRequest(models.Model):
+    id=models.AutoField(primary_key=True)
+    fk_processid=models.ForeignKey(Process, models.DO_NOTHING, db_column='fk_processid')
+    title=models.TextField()
+    phone=models.TextField()
+    start_date=models.DateField()
+    complete_date=models.DateField()
+    project_type=models.TextField()
+    budget=models.TextField()
+    location =models.TextField()
+    sponsor= models.TextField()
+    manager = models.TextField()
+    summary= models.TextField()
+    objectives = models.TextField()
+    justification= models.TextField()
+    case_fast_track= models.TextField()
+    dependencies = models.TextField()
+    tech= models.TextField()
+    risk=models.TextField()
+    in_scope=models.TextField()
+    out_scope=models.TextField()
+    cost_overview=models.TextField()
+    grand_total=models.TextField()
+    class Meta:
+      db_table = 'project_request'
+
+
+
+class ProjectStakeholder(models.Model):
+    id=models.AutoField(primary_key=True)
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_stakeholders")
+    name=models.TextField()
+    role=models.TextField()
+    contact_info=models.TextField()
+    class Meta:
+      db_table = 'project_stakeholder'
+
+class ProjectMilestone(models.Model):
+    id=models.AutoField(primary_key=True)
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_milestones")
+    name=models.TextField()
+    deadline= models.DateField()
+    class Meta:
+      db_table = 'project_milestone'
+
+class ProjectStaffRes(models.Model):
+    id=models.AutoField(primary_key=True)
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_staff_resources")
+    function=models.TextField()
+    capability= models.TextField()
+    fte= models.TextField()
+    class Meta:
+      db_table = 'project_staff_resource'

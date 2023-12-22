@@ -391,7 +391,28 @@ router.register(
 router.register(
     r'cac_lubricants',
     views.CacLubricantViewSet,
-    basename='Fetched by fk_cac_id')             
+    basename='Fetched by fk_cac_id')        
+
+router.register(
+    r'project_request',
+    views.ProjectRequestViewSet,
+    basename='Project Request'
+)     
+router.register(
+    r'project_stakeholder',
+    views.ProjectStakeholderViewSet,
+    basename='Project Stakeholder'
+)     
+router.register(
+    r'project_milestone',
+    views.ProjectMilestoneViewSet,
+    basename='ProjectMilestone'
+)     
+router.register(
+    r'project_staff_resource',
+    views.ProjectStaffResViewSet,
+    basename='Project Staff Resource'
+)     
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="home.html"), name="home"),

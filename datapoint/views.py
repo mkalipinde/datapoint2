@@ -984,3 +984,18 @@ class Security():
         return
         raise APIException(
             'You do not have permission to perform this action.')
+class ProjectRequestViewSet(viewsets.ModelViewSet):
+    queryset = ProjectRequest.objects.all()
+    serializer_class = ProjectRequestSerializer
+
+class ProjectStakeholderViewSet(viewsets.ModelViewSet):
+    queryset = ProjectStakeholder.objects.all()
+    serializer_class = ProjectStakeholderSerializer
+
+class ProjectMilestoneViewSet(viewsets.ModelViewSet):
+    queryset = ProjectMilestone.objects.all()
+    serializer_class = ProjectMilestoneSerializer
+    
+class ProjectStaffResViewSet(viewsets.ModelViewSet):
+    queryset = ProjectStaffRes.objects.all()
+    serializer_class = ProjectStaffResSerializer

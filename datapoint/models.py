@@ -1136,6 +1136,8 @@ class ProjectRequest(models.Model):
     out_scope=models.TextField()
     cost_overview=models.TextField()
     grand_total=models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     class Meta:
       db_table = 'project_request'
 
@@ -1143,7 +1145,7 @@ class ProjectRequest(models.Model):
 
 class ProjectStakeholder(models.Model):
     id=models.AutoField(primary_key=True)
-    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_stakeholders")
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="stakeholders")
     name=models.TextField()
     role=models.TextField()
     contact_info=models.TextField()
@@ -1152,7 +1154,7 @@ class ProjectStakeholder(models.Model):
 
 class ProjectMilestone(models.Model):
     id=models.AutoField(primary_key=True)
-    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_milestones")
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="milestones")
     name=models.TextField()
     deadline= models.DateField()
     class Meta:
@@ -1160,7 +1162,7 @@ class ProjectMilestone(models.Model):
 
 class ProjectStaffRes(models.Model):
     id=models.AutoField(primary_key=True)
-    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="project_staff_resources")
+    project_request_id=models.ForeignKey(ProjectRequest, models.DO_NOTHING, db_column='project_request_id', related_name="staff_resources")
     function=models.TextField()
     capability= models.TextField()
     fte= models.TextField()

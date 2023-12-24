@@ -1458,24 +1458,55 @@ class ProjectStakeholderSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectStakeholder
         fields = ('__all__')  
-
+        read_only_fields = ('created_at', 'updated_at')
 class ProjectMilestoneSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProjectMilestone
-        fields = ('__all__')  
+        fields = ('__all__') 
+        read_only_fields = ('created_at', 'updated_at')
 
 class ProjectStaffResSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ProjectStaffRes
-        fields = ('__all__')  
+        fields = ('__all__')
+        read_only_fields = ('created_at', 'updated_at')  
 
 class ProjectRequestSerializer(serializers.ModelSerializer):
     staff_resources = ProjectStaffResSerializer(read_only=True, many=True)
     stakeholders = ProjectStakeholderSerializer(read_only=True, many=True)
     milestones = ProjectMilestoneSerializer(read_only=True, many=True)
+    status = serializers.SerializerMethodField('get_status')
+
+    def get_status(self, obj):
+        try:
+            request = Request.objects.get(
+                workflow_id=obj.id, fk_processid=obj.fk_processid_id)
+            approval = Approval.objects.get(
+                fk_requestid=request.pk_requestid, status=1)
+            data = {'approval_status': approval.approval_status,
+                    'approval_stage': approval.fk_process_approval_stageid.fk_approval_stageid.approval_stage}
+        except Approval.DoesNotExist:
+            data = {'approval_status': "Not Submited", 'approval_stage': None}
+        return data
+
+    def create(self, validated_data):
+        projectRequest = ProjectRequest.objects.create(**validated_data)
+
+        profileId = SerializerHelper.get_profile_id(
+        self, self.context['request'].user.id)
+
+        SerializerHelper.create_request(
+            self, projectRequest.fk_processid, projectRequest.id, profileId)
+
+        return projectRequest
 
     class Meta:
         model = ProjectRequest
-        fields = ('__all__')  
+        fields = ('__all__')
+        read_only_fields = ('created_at', 'updated_at')  
+
+   
+    
+   

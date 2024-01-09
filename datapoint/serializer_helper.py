@@ -135,13 +135,12 @@ class SerializerHelper:
 
             process_stage_approvers = ViewsHelper.get_current_process_stage_approvers(
                 next_request_stage.pk_process_approval_stageid, request.fk_profileid)
-            
 
-        # FIXME: uncomment the following code when going to production
-
-            # DataPointMailer.request_notification_email(
-            #     self, request, process_stage_approvers)
+            DataPointMailer.request_notification_email(
+                self, request, process_stage_approvers)
             return approve_request
+        
+        
 
         if request.fk_profileid == profileId:
             iniate_request_stage = ViewsHelper.get_process_next_approval_stage(

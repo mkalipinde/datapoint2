@@ -519,16 +519,23 @@ class ProjectsSerializer(serializers.ModelSerializer):
         fields = ('__all__')
 
     def get_expenditure(self, obj):
-        expenses = GocAmount.objects.filter(
-            fk_gocid__fk_projectid=getattr(obj, 'pk'))
-        total_expense = 0
-        for expense in expenses:
-            total_expense = total_expense+expense.goc_amount
+        gocs = Goc.objects.filter(fk_projectid=getattr(obj, 'pk')).prefetch_related('gocAmounts')
 
-        data = {
-            'total_expenses': total_expense,
-            'balance': getattr(obj, 'budget_amount')-total_expense
-        }
+        total_expense = 0
+        for goc in gocs:
+          request =Request.objects.get(workflow_id=goc.pk_gocid, fk_processid=goc.fk_processid)
+          approvals =Approval.objects.filter(fk_requestid=request.pk_requestid, approval_status='RE')
+
+          if len(approvals) > 0:
+              print(goc.pk_gocid)
+              continue
+    
+          total_expense+=sum([gocAmount.goc_amount for gocAmount in  goc.gocAmounts.all()])
+        
+        data={
+                'total_expenses': total_expense,
+                'balance': getattr(obj, 'budget_amount')-total_expense
+            }
         return data
 
 

@@ -139,6 +139,8 @@ class SerializerHelper:
             DataPointMailer.request_notification_email(
                 self, request, process_stage_approvers)
             return approve_request
+        
+        
 
         if request.fk_profileid == profileId:
             iniate_request_stage = ViewsHelper.get_process_next_approval_stage(

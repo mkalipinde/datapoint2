@@ -992,10 +992,37 @@ class ProjectStakeholderViewSet(viewsets.ModelViewSet):
     queryset = ProjectStakeholder.objects.all()
     serializer_class = ProjectStakeholderSerializer
 
+    def get_queryset(self):
+
+        queryset = ProjectStakeholder.objects.all()
+        project_id = self.request.query_params.get('project_request_id')
+
+        if project_id is not None:
+            queryset = queryset.filter(project_request_id=project_id)
+        return queryset
+
 class ProjectMilestoneViewSet(viewsets.ModelViewSet):
     queryset = ProjectMilestone.objects.all()
     serializer_class = ProjectMilestoneSerializer
+
+    def get_queryset(self):
+
+        queryset = ProjectMilestone.objects.all()
+        project_id = self.request.query_params.get('project_request_id')
+
+        if project_id is not None:
+            queryset = queryset.filter(project_request_id=project_id)
+        return queryset
     
 class ProjectStaffResViewSet(viewsets.ModelViewSet):
     queryset = ProjectStaffRes.objects.all()
     serializer_class = ProjectStaffResSerializer
+
+    def get_queryset(self):
+
+        queryset = ProjectStaffRes.objects.all()
+        project_id = self.request.query_params.get('project_request_id')
+
+        if project_id is not None:
+            queryset = queryset.filter(project_request_id=project_id)
+        return queryset

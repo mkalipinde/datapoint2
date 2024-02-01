@@ -1136,6 +1136,9 @@ class ProjectRequest(models.Model):
     out_scope=models.TextField()
     cost_overview=models.TextField()
     grand_total=models.TextField()
+    deliverables=models.TextField()
+    tm_overview= models.TextField()
+    sr_overview= models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     class Meta:

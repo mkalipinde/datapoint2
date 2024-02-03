@@ -1212,8 +1212,9 @@ class ApprovalSerializer(serializers.ModelSerializer):
         approval = Approval()
         profileId = SerializerHelper.get_profile_id(
             self, self.context['request'].user.id)
+      
         financial_year = SerializerHelper.get_current_financial_year(self)
-
+    
         SerializerHelper.approve_request(
             self, validated_data, profileId, financial_year)
         return approval

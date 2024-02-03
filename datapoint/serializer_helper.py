@@ -73,6 +73,8 @@ class SerializerHelper:
         process_id = validated_data.get('process_id')
         comment = validated_data.get('comment')
         request_id = validated_data.get('fk_requestid').pk_requestid
+        
+
 
         approval_stages = ViewsHelper.get_process_approval_stages(
             self, ProcessApprovalStage.objects.all(), process_id)
@@ -105,6 +107,7 @@ class SerializerHelper:
 
             process_stage_approver = ViewsHelper.get_process_stage_approver(
                 next_request_stage.pk_process_approval_stageid, next_request_stage.approval_stage_number, profileId, request.fk_profileid)
+            
 
             process_stage_approver_id = process_stage_approver.pk_process_stage_approverid
 
@@ -135,12 +138,12 @@ class SerializerHelper:
 
             process_stage_approvers = ViewsHelper.get_current_process_stage_approvers(
                 next_request_stage.pk_process_approval_stageid, request.fk_profileid)
+            
+         
 
             DataPointMailer.request_notification_email(
                 self, request, process_stage_approvers)
             return approve_request
-        
-        
 
         if request.fk_profileid == profileId:
             iniate_request_stage = ViewsHelper.get_process_next_approval_stage(

@@ -60,6 +60,7 @@ Subject: Datapoint Workflow
             requested_last_name = request.fk_profileid.user.last_name
             url = UrlHelper.view_url(
                 self, process_code)
+        
 
             notification = Notification()
             notification.fk_requestid_id = pk_requestid
@@ -70,8 +71,12 @@ Subject: Datapoint Workflow
             notification.process_code = process_code
             notification.requested_by = requested_first_name + \
                 " "+(requested_last_name).upper()
+            
+
             notification.url = "https://tmldatapoint.web.app/#/" + \
                 url+"/"+str(workflow_id)
+            
+
             notification.date_created = datetime.now().strftime("%Y-%m-%d")
             notification.status = 1
             notification.save()

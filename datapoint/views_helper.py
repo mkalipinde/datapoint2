@@ -113,11 +113,17 @@ class ViewsHelper:
             return queryset
 
     def get_process_next_approval_stage(self, currect_stage_number, processid):
+
+        processApproval = ProcessApprovalStage.objects.get(
+                fk_processid=processid, approval_stage_number=currect_stage_number+1,  approval_stage_status='Active')
+
         try:
             return ProcessApprovalStage.objects.get(
                 fk_processid=processid, approval_stage_number=currect_stage_number+1,  approval_stage_status='Active')
-        except:
-            ProcessApprovalStage.DoesNotExist
+        
+        except ProcessApprovalStage.DoesNotExist as e:
+            error_message = str(e)  # Retrieve the error message
+            print("Error message:", error_message)  
             return False
 
     def get_process_current_approval_stage(self, currect_stage_number, processid):
@@ -130,6 +136,7 @@ class ViewsHelper:
     def get_process_stage_approver(process_approval_stageid, stage_number, profile, request_profile):
         approval_role = ApprovalRole.objects.get(
             fk_process_approval_stageid=process_approval_stageid)
+        
 
         if stage_number == 0:
             try:
@@ -171,6 +178,9 @@ class ViewsHelper:
         try:
             process_stage_approver = ProcessStageApprover.objects.filter(
                 fk_approval_roleid=approval_role.pk_approval_roleid, fk_profileid=profile, approver_status='active', ).order_by('approver_level').first()
+            
+         
+
             return process_stage_approver
         except:
             ProcessStageApprover.DoesNotExist

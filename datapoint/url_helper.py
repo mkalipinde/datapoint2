@@ -21,11 +21,8 @@ class UrlHelper:
         elif (process_code == "WC"):
             return 'workflow-change'  
 
-
-
         elif (process_code == "AM"):
             return 'asset-movement'
-
         elif (process_code == "AFP"):
             return 'afp'
 
@@ -44,8 +41,6 @@ class UrlHelper:
         elif (process_code == "GOC"):
             return 'goc'
 
-
-
         elif (process_code == "OT"):
             return 'overtime'
 
@@ -54,8 +49,6 @@ class UrlHelper:
 
         elif (process_code == "TA"):
             return 'travel'
-
-
 
         elif (process_code == "VC"):
             return 'vendor'
@@ -70,7 +63,10 @@ class UrlHelper:
             return 'pluscard-account-opening'  
 
         elif (process_code == "CAC"):
-            return 'pluscard-customization'                     
-
+            return 'pluscard-customization'  
+        
+        elif (process_code == "PRR"):
+            return 'project-requests'  
+                           
         else:
             return False    

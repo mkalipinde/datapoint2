@@ -1,17 +1,17 @@
 version: "3"
 services:
-  # datapointdb:
-  #   container_name: datapointdb
-  #   platform: linux/x86_64
-  #   image: mysql:5.7.30
-  #   environment:
-  #     MYSQL_USER: "datapoint"
-  #     MYSQL_ROOT_PASSWORD: "datapoint"
-  #     MYSQL_DATABASE: "datapoint"
-  #   ports:
-  #     - "3306:3306"
-  #   volumes:
-  #     - ./mysql-data:/var/lib/mysql
+  datapointdb:
+    container_name: datapointdb
+    platform: linux/x86_64
+    image: mysql:5.7.30
+    environment:
+      MYSQL_USER: "datapoint"
+      MYSQL_ROOT_PASSWORD: "datapoint"
+      MYSQL_DATABASE: "datapoint"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
   datapoint-api:
     container_name: dataPoint-api
     build: .

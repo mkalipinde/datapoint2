@@ -223,6 +223,11 @@ Subject: Datapoint Workflow
             firstname = helpdesk_admin.fk_profileid.user.first_name
             last_name = helpdesk_admin.fk_profileid.user.last_name
             email = helpdesk_admin.fk_profileid.user.email
+          
+
+
+            print(helpdesk_admin.fk_profileid.user.email)
+         
 
             with open(settings.BASE_DIR+"/templates/helpdesk_admin_email.txt") as txt_message:
                 request_approval_message = txt_message.read()+" Firstname: " + \
@@ -233,6 +238,8 @@ Subject: Datapoint Workflow
                 {'firstname': firstname, 'requested_by': requested_by, 'issue': issue, 'url': url, 'request_date': request_date})
             email_message.attach_alternative(html_templete, "text/html")
             email_message.send()
+           
+          
 
     def helpdesk_status_notification(helpdesk_admins, status):
         url = 'https://tmldatapoint.web.app/#/helpdesk/' + \

@@ -113,10 +113,6 @@ class ViewsHelper:
             return queryset
 
     def get_process_next_approval_stage(self, currect_stage_number, processid):
-
-        processApproval = ProcessApprovalStage.objects.get(
-                fk_processid=processid, approval_stage_number=currect_stage_number+1,  approval_stage_status='Active')
-
         try:
             return ProcessApprovalStage.objects.get(
                 fk_processid=processid, approval_stage_number=currect_stage_number+1,  approval_stage_status='Active')

@@ -1188,13 +1188,21 @@ class GocSerializer(serializers.ModelSerializer):
 
 class ProcessStageApproverSerializer(serializers.ModelSerializer):
     profile = UserProfileSerializer(source="fk_profileid", read_only=True)
+    handover = serializers.SerializerMethodField()
     approval_role = ApprovalRoleSerializer(
         source="fk_approval_roleid", read_only=True)
+    
+    def get_handover(self, object):
+        handover= Handover.objects.filter(my_profileid=object.fk_profileid.pk_profileid, status=1)
+        if handover.exists():
+          return ProfileSerializer(handover.first().to_profileid).data
+        return None
 
     class Meta:
         model = ProcessStageApprover
         fields = ('__all__')
 
+   
 
 class ApprovalSerializer(serializers.ModelSerializer):
     process_id = serializers.IntegerField(write_only=True)
@@ -1210,11 +1218,14 @@ class ApprovalSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         approval = Approval()
+
+     
         profileId = SerializerHelper.get_profile_id(
             self, self.context['request'].user.id)
-      
+        
+        
         financial_year = SerializerHelper.get_current_financial_year(self)
-    
+
         SerializerHelper.approve_request(
             self, validated_data, profileId, financial_year)
         return approval

@@ -75,9 +75,9 @@ class SerializerHelper:
         request_id = validated_data.get('fk_requestid').pk_requestid
         
 
-
         approval_stages = ViewsHelper.get_process_approval_stages(
             self, ProcessApprovalStage.objects.all(), process_id)
+    
 
         request = Request.objects.get(
             pk_requestid=request_id)
@@ -110,6 +110,8 @@ class SerializerHelper:
             
 
             process_stage_approver_id = process_stage_approver.pk_process_stage_approverid
+
+
 
             if validated_data.get('isDenied'):
                 reject_request = ViewsHelper.reject_request(request_id, financial_year,

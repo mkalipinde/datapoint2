@@ -66,7 +66,7 @@ class UrlHelper:
             return 'pluscard-customization'  
         
         elif (process_code == "PRR"):
-            return 'project-requests'  
+            return 'view-prq'  
                            
         else:
             return False    

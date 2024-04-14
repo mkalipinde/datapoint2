@@ -52,6 +52,7 @@ Subject: Datapoint Workflow
             first_name = process_stage_approver.fk_profileid.user.first_name
             last_name = process_stage_approver.fk_profileid.user.last_name
             email = process_stage_approver.fk_profileid.user.email
+          
             workflow = request.fk_processid.process
             workflow_id = request.workflow_id
             process_code = request.fk_processid.process_code
@@ -98,6 +99,7 @@ Subject: Datapoint Workflow
         last_name = request.fk_profileid.user.last_name
 
         email = request.fk_profileid.user.email
+  
         request_date = request.date
 
         workflow = request.fk_processid.process

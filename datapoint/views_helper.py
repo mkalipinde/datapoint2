@@ -281,7 +281,7 @@ class ViewsHelper:
 
     def get_process_stage_approvers(self, queryset, process_id):
         if process_id != None:
-            return queryset.filter(fk_approval_roleid__fk_process_approval_stageid__fk_processid=process_id, approver_status='Active').order_by('approver_level')
+           return queryset.filter(fk_approval_roleid__fk_process_approval_stageid__fk_processid=process_id, approver_status='Active').order_by('approver_level')
         else:
             return queryset
 
